@@ -18,8 +18,8 @@ header {
 }
 
 nav {
-    position: absolute;
-    right: 12%;
+  position: absolute;
+  right: 12%;
 }
 
 /* Style pour le bouton */
@@ -36,6 +36,23 @@ nav {
   margin: 4px 2px;
   transition-duration: 0.4s;
   border-radius: 5px;
+}
+
+.header-middle {
+  text-align: center; /* Centrer le texte dans le header */
+}
+
+.header-link {
+  color: #34e28b; /* ou toute autre couleur appropriée */
+  text-decoration: none; /* pour supprimer le soulignement par défaut des liens */
+  font-weight: bold; /* si vous voulez que le texte soit en gras */
+  /* Ajoutez d'autres styles comme padding, font-size, etc., selon vos besoins */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Assure une répartition égale de l'espace autour des éléments */
+  align-items: center; /* Centre les éléments verticalement */
 }
 
 .logo {
