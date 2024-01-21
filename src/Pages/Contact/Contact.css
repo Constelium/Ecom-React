@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --button-color: #34e28b;
+  --style-color: #fa0061;
+  --background-color: #010101;
+  --text-color: #99999c;
+  --hoover-color: #0ab35f;
+  --title-color: #e4dcdc;
+  --popup-background: #ffffff;
+  --popup-text-color: #000000;
+  --text-button: #010101;
+}
+
+html {
+  height: 100%;
+}
+
+/* Styles spécifiques à la page Contact */
+.contact {
+  margin-top: 100px;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styles pour le contenu principal (main) */
+main {
+  flex-direction: column;
+  font-size: 18px;
+  display: flex;
+  height: auto;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--background-color);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles pour le formulaire de contact */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: var(--button-color);
+  color: var(--text-button);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--hoover-color);
+}
+
+/* Styles pour les liens */
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact {
+    margin-top: 50px;
+  }
+
+  main {
+    padding: 10px;
+  }
+}

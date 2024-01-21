@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --button-color: #34e28b; /* Couleur principale */
+  --style-color: #fa0061; /* Couleur secondaire */
+  --background-Head-Foot: #111111; /* Couleur de fond */
+  --background-color: #010101;
+  --text-color: #99999c; /* Couleur du texte */
+  --title-color: #e4dcdc;
+  --hoover-color: #0ab35f;
+  --popup-background: #ffffff; /* Fond de la pop-up */
+  --popup-text-color: #000000; /* Texte de la pop-up */
+  --text-button: #010101;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.neon-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--text-color);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.content {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.neon-text {
+  /* ... vos autres styles ... */
+  border-right: 2px solid var(--button-color);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+.content p {
+  width: 100%;
+  margin: 0;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--button-color);
+  }
+}
+
+h2,
+h5,
+h6 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  color: var(--title-color);
+}
+
+h1 {
+  margin-bottom: 100px;
+}
+
+p {
+  font-size: 17px;
+  margin: 0;
+}
+
+.our-canvases-btn {
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: var(--button-color);
+  text-align: center;
+  border: 1px solid var(--background-color);
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.our-canvases-btn:hover {
+  background-color: var(--hoover-color);
+}
+
+.our-canvases-btn a {
+  color: var(--text-button);
+}
+
+/* Styles pour le contenu principal (main) */
+main {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Boutons pages d'accueil Classic canva / Custom canva */
+
+.canva-container button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.title {
+  width: 100%;
+  color: var(--text-color);
+}
+
+.title p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Styles pour les liens */
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}

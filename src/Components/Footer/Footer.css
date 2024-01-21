@@ -1,0 +1,65 @@
+footer {
+  position: fixed;
+  font-size: 15px;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--background-Head-Foot);
+  padding: 5px;
+  box-shadow: 10px 20px 40px var(--button-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footerdiv {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerdiv p {
+  color: var(--text-color);
+}
+
+.FooterLinks {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 33%;
+  color: var(--text-color);
+}
+
+.FooterLinks p {
+  color: var(--text-color);
+}
+
+.emailing {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.emailing h4 {
+  background-color: var(--button-color);
+}
+
+.NewsletterBlock h4 {
+  color: var(--text-color);
+  background-color: var(--button-color);
+}
+
+.emailing button {
+  height: 40px; /* Ensuring the button has the same height as the input */
+  padding: 0 15px; /* Adjusting padding to match the design and text length */
+  background-color: #34e28b; /* Example button color */
+  color: #010101;
+  border: none; /* Removing any default border */
+  cursor: pointer; /* To indicate the button is clickable */
+  font-size: 16px; /* Matching the font size with the input */
+  margin: 0; /* Ensuring there are no additional margins */
+}

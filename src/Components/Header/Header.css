@@ -1,0 +1,71 @@
+header {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 60px;
+  background-color: var(--background-Head-Foot);
+  color: var(--text-color);
+  padding: 20px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  box-shadow: -5px -7px 20px var(--button-color);
+  z-index: 9999;
+  transition: 0.15s;
+}
+
+nav {
+    position: absolute;
+    right: 12%;
+}
+
+/* Style pour le bouton */
+.menu-button {
+  cursor: pointer;
+  background-color: var(--button-color);
+  color: var(--text-button);
+  padding: 10px 15px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  margin-left: 12%;
+}
+.menu-button:hover {
+  background-color: var(--hoover-color);
+}
+
+/* Style pour cacher le menu par défaut */
+.dropdown-menu {
+  /* display: none; */
+  position: absolute;
+  background-color: var(--title-color);
+  min-width: 160px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  z-index: 999999;
+}
+
+/* Style pour les liens dans le menu */
+.dropdown-menu a {
+  color: var(--text-button);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Style pour le menu ouvert */
+.show {
+  display: block;
+}

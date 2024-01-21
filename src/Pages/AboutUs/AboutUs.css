@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --button-color: #34e28b;
+  --style-color: #fa0061;
+  --background-color: #010101;
+  --text-color: #99999c;
+  --hoover-color: #0ab35f;
+  --title-color: #e4dcdc;
+  --popup-background: #ffffff;
+  --popup-text-color: #000000;
+  --text-button: #010101;
+}
+
+/* Styles spécifiques à la page About Us */
+.aboutus p {
+  display: flex;
+  margin: 30px auto;
+  color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus h5 {
+  display: flex;
+  margin: 30px auto;
+  color: var(--title-color);
+}
+
+.aboutus h3 {
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* Styles pour le contenu principal (main) */
+main {
+  flex-direction: column;
+  font-size: 16px;
+  display: flex;
+  min-height: 100vh;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--background-color);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles pour les liens */
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .aboutus {
+    margin-top: 50px;
+  }
+
+  main {
+    padding: 10px;
+  }
+}

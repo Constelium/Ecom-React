@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --button-color: #34e28b;
+  --style-color: #fa0061;
+  --background-color: #010101;
+  --text-color: #99999c;
+  --hoover-color: #0ab35f;
+  --text-button: #010101;
+  --title-color: #e4dcdc;
+}
+
+/* Styles spécifiques à la page FAQ */
+.faq p {
+  display: flex;
+  margin: 30px auto;
+  color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.faq h5 {
+  display: flex;
+  margin: 30px auto;
+  color: var(--title-color);
+}
+
+.faq h3 {
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* Styles pour le contenu principal (main) */
+main {
+  flex-direction: column;
+  font-size: 16px;
+  display: flex;
+  min-height: 100vh;
+  max-width: 600px;
+  margin: auto;
+  padding: 1px;
+  background-color: var(--background-color);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive design et autres styles spécifiques */
+@media (max-width: 768px) {
+  /* Ajoutez ici vos styles pour les écrans plus petits */
+}
+
+/* Styles pour les liens */
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
