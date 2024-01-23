@@ -37,7 +37,9 @@ function Header() {
           </div>
         )}
       </nav>
-      <img className="logo" src={logo} width="80" height="80" />
+      <a href="/" className="logo-link">
+        <img className="logo" src={logo} width="80" height="80" />
+      </a>
     </header>
   );
 }
