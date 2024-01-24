@@ -57,7 +57,6 @@ nav {
   transition: background-color 0.3s ease; /* Animation douce pour le survol */
 }
 
-/* Styles pour le lien lors du survol avec la souris */
 .header-link {
   text-decoration: none; /* Confirme que le surlignement est enlevé même lors du survol */
 }
