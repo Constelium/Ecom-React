@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./OurCanvases.css";
@@ -13,7 +13,7 @@ function OurCanvases() {
   return (
     <div>
       <Header />
-      <main className="OurCanvasesMain"> 
+      <main className="OurCanvasesMain">
         <section className="product-page">
           <div className="product-image">
             <img src="../public/imgtest.png" alt="Nom du Produit" />

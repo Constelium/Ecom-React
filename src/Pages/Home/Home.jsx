@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./Home.css";
@@ -10,7 +9,7 @@ function HomePage() {
       <main>
         <div className="neon-wrapper">
           <h1 className="neon-text">
-            Constelium, for a vision that's truly yours: canva, dashboard,
+            Constelium, for a vision thats truly yours: canva, dashboard,
             customize.
           </h1>
           <button className="our-canvases-btn">

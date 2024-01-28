@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom"; // Importez useLocation
 import "./Header.css";
 import logo from "../../assets/LogoConst.png";
@@ -15,6 +15,7 @@ function Header() {
 
   return (
     <header>
+      p
       <nav>
         {shouldShowDigitalCanvasLink && ( // Utilisez la condition ici pour afficher ou masquer le lien
           <div className="header-middle">
