@@ -22,6 +22,12 @@ footer {
   flex-direction: column;
 }
 
+.footerdiv form {
+  display: flex; /* Aligner les enfants du formulaire en ligne */
+  justify-content: center; /* Centrer le formulaire horizontalement */
+  align-items: center; /* Centrer le formulaire verticalement */
+}
+
 .footerdiv p {
   color: var(--text-color);
 }
