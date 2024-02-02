@@ -1,19 +1,36 @@
-import { useState } from "react"; // Ajoutez cette ligne pour importer useState
+import { useState, useEffect } from "react"; // Ajoutez cette ligne pour importer useState
 import "./Footer.css";
 
 function Footer() {
-  const [email, setEmail] = useState(""); // État pour stocker l'email entré par l'utilisateur
+  // État pour stocker la valeur de l'entrée de l'e-mail
+  const [email, setEmail] = useState("");
 
+  // État pour la validation de l'email
+  const [isValidEmail, setIsValidEmail] = useState(false);
+
+  // Fonction pour mettre à jour l'état avec la valeur du champ de saisie
   const handleEmailChange = (event) => {
-    // Cette fonction va maintenant être utilisée
     setEmail(event.target.value);
   };
 
+  // Utilisation de useEffect pour gérer la validation de l'email
+  useEffect(() => {
+    // Expression régulière simple pour la validation d'email
+    const emailRegex = /\S+@\S+\.\S+/;
+    setIsValidEmail(emailRegex.test(email));
+  }, [email]);
+
+  // Fonction pour gérer l'envoi du formulaire
   const handleSubmit = (event) => {
-    // Cette fonction va également être utilisée
     event.preventDefault();
-    // Ici, vous pouvez ajouter la logique pour envoyer l'email à votre service de newsletter.
-    console.log(email); // Pour le test, nous affichons l'email dans la console.
+    if (isValidEmail) {
+      // Ici, vous pouvez ajouter la logique pour envoyer l'email à votre service de newsletter.
+      console.log("Email submitted:", email);
+      // Réinitialiser le champ après la soumission
+      setEmail("");
+    } else {
+      console.log("Invalid email address.");
+    }
   };
 
   return (
@@ -35,13 +52,16 @@ function Footer() {
           <form onSubmit={handleSubmit}>
             <input
               type="email"
-              name="email"
               placeholder="Your email address"
+              name="email"
               value={email}
               onChange={handleEmailChange}
               required
+              aria-invalid={!isValidEmail}
             />
-            <button type="submit">Sign up</button>
+            <button type="submit" disabled={!isValidEmail}>
+              Sign up
+            </button>
           </form>
         </div>
         <p>©Constelium // All rights reserved.</p>
