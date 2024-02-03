@@ -15,7 +15,6 @@ function Header() {
 
   return (
     <header>
-      p
       <nav>
         {shouldShowDigitalCanvasLink && ( // Utilisez la condition ici pour afficher ou masquer le lien
           <div className="header-middle">
