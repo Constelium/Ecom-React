@@ -20,16 +20,23 @@ function Footer() {
     setIsValidEmail(emailRegex.test(email));
   }, [email]);
 
-  // Fonction pour gérer l'envoi du formulaire
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (isValidEmail) {
-      // Ici, vous pouvez ajouter la logique pour envoyer l'email à votre service de newsletter.
-      console.log("Email submitted:", email);
-      // Réinitialiser le champ après la soumission
-      setEmail("");
-    } else {
-      console.log("Invalid email address.");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("https://api-const.vercel.app/mail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(setEmail),
+      });
+
+      const data = await response.json();
+      if (data.message) {
+        console.log("User registered:", data.message);
+      }
+    } catch (error) {
+      console.error("There was an error registering the user", error);
     }
   };
 

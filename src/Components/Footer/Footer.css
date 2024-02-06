@@ -45,9 +45,9 @@ footer {
 }
 
 .emailing {
-  display: flex;
-  flex-direction: row;
-  margin: 10px 0;
+  display: flex; /* Aligner les enfants du formulaire en ligne */
+  justify-content: center; /* Centrer le formulaire horizontalement */
+  align-items: center;
 }
 
 .emailing h4 {
