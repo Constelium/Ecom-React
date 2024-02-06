@@ -50,7 +50,7 @@ function Footer() {
         <div>
           <h3>Follow us</h3>
           <a href="#">
-            <img src="twitter.png" alt="Twitter" />
+            <img src="x.png" alt="X" />
           </a>
         </div>
       </div>
