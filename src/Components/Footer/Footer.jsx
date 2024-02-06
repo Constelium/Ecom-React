@@ -3,22 +3,22 @@ import "./Footer.css";
 
 function Footer() {
   // État pour stocker la valeur de l'entrée de l'e-mail
-  const [email, setEmail] = useState("");
+  const [mail, setMail] = useState("");
 
   // État pour la validation de l'email
-  const [isValidEmail, setIsValidEmail] = useState(false);
+  const [isValidMail, setIsValidMail] = useState(false);
 
   // Fonction pour mettre à jour l'état avec la valeur du champ de saisie
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
+  const handleMailChange = (event) => {
+    setMail(event.target.value);
   };
 
   // Utilisation de useEffect pour gérer la validation de l'email
   useEffect(() => {
     // Expression régulière simple pour la validation d'email
-    const emailRegex = /\S+@\S+\.\S+/;
-    setIsValidEmail(emailRegex.test(email));
-  }, [email]);
+    const mailRegex = /\S+@\S+\.\S+/;
+    setIsValidMail(mailRegex.test(mail));
+  }, [mail]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,7 +28,7 @@ function Footer() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(setEmail),
+        body: JSON.stringify(setMail),
       });
 
       const data = await response.json();
@@ -61,12 +61,12 @@ function Footer() {
               type="email"
               placeholder="Your email address"
               name="email"
-              value={email}
-              onChange={handleEmailChange}
+              value={mail}
+              onChange={handleMailChange}
               required
-              aria-invalid={!isValidEmail}
+              aria-invalid={!isValidMail}
             />
-            <button type="submit" disabled={!isValidEmail}>
+            <button type="submit" disabled={!isValidMail}>
               Sign up
             </button>
           </form>
