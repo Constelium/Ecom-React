@@ -49,7 +49,11 @@ function Footer() {
         </div>
         <div>
           <h3>Follow us</h3>
-          <a href="#">
+          <a
+            href="https://twitter.com/constelium"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="x.png" alt="X" />
           </a>
         </div>

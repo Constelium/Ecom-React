@@ -87,7 +87,7 @@ p {
   margin: 0;
 }
 
-.our-canvases-btn {
+/* .our-canvases-btn {
   display: inline-block;
   font-size: 18px;
   padding: 10px 20px;
@@ -105,7 +105,7 @@ p {
 
 .our-canvases-btn a {
   color: var(--text-button);
-}
+} */
 
 /* Styles pour le contenu principal (main) */
 main {

@@ -12,9 +12,9 @@ function HomePage() {
             Constelium, for a vision thats truly yours: canva, dashboard,
             customize.
           </h1>
-          <button className="our-canvases-btn">
+          {/* <button className="our-canvases-btn">
             <a href="/OurCanvases">Our canvases</a>
-          </button>
+          </button> */}
           <div className="title">
             <div className="content">
               <div>
