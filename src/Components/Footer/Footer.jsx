@@ -30,7 +30,7 @@ function Footer() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(setMail),
+          body: JSON.stringify(mail),
         }
       );
 
