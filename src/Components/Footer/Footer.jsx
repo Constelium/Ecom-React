@@ -27,9 +27,10 @@ function Footer() {
       const response = await axios.post(
         "https://api-const.vercel.app/mail/register",
         {
-          handleMailChange,
+          setMail,
         }
       );
+      console.log(setMail);
 
       const data = await response.json();
       if (data.message) {
