@@ -28,7 +28,7 @@ function Footer() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(mail),
+        body: JSON.stringify(Mail),
       });
 
       const data = await response.json();
