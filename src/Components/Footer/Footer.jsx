@@ -23,16 +23,13 @@ function Footer() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(
-        "https://api-const.vercel.app/mail/register",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(mail),
-        }
-      );
+      const response = await fetch("https://api-const.vercel.app/mail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(mail),
+      });
 
       const data = await response.json();
       if (data.message) {
