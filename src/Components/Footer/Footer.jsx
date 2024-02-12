@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"; // Ajoutez cette ligne pour importer useState
+import axios from "axios";
 import "./Footer.css";
 
 function Footer() {
@@ -23,14 +24,10 @@ function Footer() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(
+      const response = await axios.post(
         "https://api-const.vercel.app/mail/register",
         {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ setMail }),
+          setMail,
         }
       );
 
