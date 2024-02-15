@@ -58,6 +58,13 @@ function Footer() {
           >
             <img src="x.png" alt="X" />
           </a>
+          <a
+            href="https://www.linkedin.com/in/constelium"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="LinkedIn.png" alt="LinkedIn" />
+          </a>
         </div>
       </div>
       <div className="footerdiv">
