@@ -6,23 +6,25 @@ import logo from "../../assets/LogoConst.png";
 function Header() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const location = useLocation(); // Utilisez le hook pour accéder à l'objet de localisation
+  const shouldShowDigitalCanvasLink = location.pathname !== "/OurCanvases"; // Condition pour l'affichage
 
   const togglePopup = () => {
     setIsPopupOpen(!isPopupOpen);
   };
 
-  const shouldShowDigitalCanvasLink = location.pathname !== "/OurCanvases"; // Condition pour l'affichage
-
   return (
     <header>
+      <a href="/" className="logo-link">
+        <img className="logo" src={logo} width="80" height="80" />
+      </a>
+      <div className="header-middle">
+        {/* {shouldShowDigitalCanvasLink && ( // Utilisez la condition ici pour afficher ou masquer le lien */}
+        <a href="/OurCanvases" className="header-link">
+          Get your digital canvas
+        </a>
+        {/* )} */}
+      </div>
       <nav>
-        {shouldShowDigitalCanvasLink && ( // Utilisez la condition ici pour afficher ou masquer le lien
-          <div className="header-middle">
-            <a href="/OurCanvases" className="header-link">
-              Get your digital canvas
-            </a>
-          </div>
-        )}
         {/* Le reste de votre code */}
         <button id="menuButton" className="menu-button" onClick={togglePopup}>
           <i className="icon">☰</i>
@@ -37,9 +39,6 @@ function Header() {
           </div>
         )}
       </nav>
-      <a href="/" className="logo-link">
-        <img className="logo" src={logo} width="80" height="80" />
-      </a>
     </header>
   );
 }

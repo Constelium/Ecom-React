@@ -3,6 +3,7 @@ header {
   top: 0;
   display: flex;
   align-items: center;
+  flex-direction: row;
   font-size: 15px;
   margin-bottom: 60px;
   background-color: var(--background-Head-Foot);
@@ -13,10 +14,11 @@ header {
   height: 100px;
   padding: 5px;
   box-shadow: -5px -7px 20px var(--button-color);
-  transition: 0.15s;
+  /* transition: 0.15s; */
 }
 
 nav {
+  content: "";
   position: absolute;
   right: 12%;
 }
@@ -40,9 +42,9 @@ nav {
 /* Styles pour le conteneur du lien, pour s'assurer qu'il est bien centré horizontalement */
 .header-middle {
   position: absolute;
-
-  left: -1390%;
-  transform: translateX(-50%);
+  width: 100%;
+  /* left: -1390%; */
+  /* transform: translateX(-50%); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,9 +54,9 @@ nav {
 .header-link {
   color: #34e28b; /* Utilisez la couleur de votre choix */
   text-decoration: none; /* Enlève le surlignement du lien */
-  padding: 10px 20px; /* Ajoutez du padding pour une meilleure zone de clic */
+  padding: auto; /* Ajoutez du padding pour une meilleure zone de clic */
   border-radius: 5px; /* Si vous voulez des coins arrondis */
-  transition: background-color 0.3s ease; /* Animation douce pour le survol */
+  /* transition: background-color 0.3s ease; Animation douce pour le survol */
 }
 
 .header-link {
