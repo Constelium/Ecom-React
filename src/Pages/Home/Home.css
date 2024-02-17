@@ -19,6 +19,8 @@
 html {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .neon-wrapper {
@@ -38,14 +40,6 @@ html {
   }
 }
 
-.content {
-  width: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .neon-text {
   /* ... vos autres styles ... */
   border-right: 2px solid var(--button-color);
@@ -53,12 +47,6 @@ html {
   overflow: hidden;
   animation: typing 3s steps(40, end) forwards,
     blink-caret 0.75s step-end infinite;
-}
-
-.content p {
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 @keyframes blink-caret {
@@ -74,7 +62,6 @@ html {
 h2,
 h5,
 h6 {
-  margin-top: 60px;
   margin-bottom: 30px;
   color: var(--title-color);
 }
@@ -111,21 +98,12 @@ p {
 /* Styles pour le contenu principal (main) */
 main {
   width: 100%;
-  padding: 0;
-  flex-direction: column;
   display: flex;
-  width: 100%;
-  padding: 0;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-/* Boutons pages d'accueil Classic canva / Custom canva */
-
-.canva-container button {
-  padding: 10px 20px;
-  margin: 0 10px;
-  cursor: pointer;
+  width: 100%;
+  padding: 0;
 }
 
 .title {
@@ -135,16 +113,37 @@ main {
 }
 
 .title p {
-  margin-bottom: 20px;
+  margin: 50%;
   text-align: center;
 }
 
-/* Styles pour les liens */
-a {
-  color: var(--text-color);
-  text-decoration: none;
+.content {
+  margin-top: 50px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-a:hover {
-  text-decoration: none;
+.content p {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.caseImg {
+  width: 90%;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  border: 4px solid white;
 }

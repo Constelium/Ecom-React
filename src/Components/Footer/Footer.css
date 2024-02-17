@@ -6,6 +6,7 @@ footer {
   bottom: 0;
   background-color: var(--background-Head-Foot);
   padding: 5px;
+  margin: 0;
   box-shadow: 10px 20px 40px var(--button-color);
   display: flex;
   flex-direction: column;

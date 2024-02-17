@@ -4,6 +4,8 @@ header {
   display: flex;
   align-items: center;
   flex-direction: row;
+  padding-left: 5%;
+  padding-right: 5%;
   font-size: 15px;
   background-color: var(--background-Head-Foot);
   color: var(--text-color);
@@ -14,6 +16,19 @@ header {
   padding: 5px;
   box-shadow: -5px -7px 20px var(--button-color);
   /* transition: 0.15s; */
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  margin-left: 12%;
+}
+
+.logo-link {
+  position: absolute;
+  left: 0;
+  margin-left: 12%;
+  top: 12%;
 }
 
 nav {
@@ -59,19 +74,6 @@ nav {
 
 .header-link {
   text-decoration: none; /* Confirme que le surlignement est enlevé même lors du survol */
-}
-
-.logo {
-  position: absolute;
-  left: 0;
-  margin-left: 12%;
-}
-
-.logo-link {
-  position: absolute;
-  left: 0;
-  margin-left: 12%;
-  top: 12%;
 }
 
 .menu-button:hover {
