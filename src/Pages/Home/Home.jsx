@@ -1,7 +1,6 @@
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./Home.css";
-import imagevitrine from "../../assets/imagevitrine";
 
 function HomePage() {
   return (
@@ -34,7 +33,7 @@ function HomePage() {
             <div className="section">
               <h2>Display Your Passion</h2>
               <div className="caseImg">
-                <img src={imagevitrine} width="90%" height="300px" />
+                <img src="{image}" width="90%" height="300px" />
               </div>
               <p>
                 With Constelium, your NFT collection comes to life in the most
