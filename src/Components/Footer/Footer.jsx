@@ -65,6 +65,13 @@ function Footer() {
           >
             <img src="LinkedIn.png" alt="LinkedIn" />
           </a>
+          <a
+            href="https://www.tiktok.com/@constelium"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="TikTok.png" alt="TikTok" />
+          </a>
         </div>
       </div>
       <div className="footerdiv">
