@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"; // Ajoutez cette ligne pour importer useState
-import axios from "axios";
+// import axios from "axios";   Je l'ai mis en commentaire car se chemin n'était pas bon lors du "npm run dev"
+import axios from "../../../package.json";
 import "./Footer.css";
 
 function Footer() {
