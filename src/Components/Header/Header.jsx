@@ -18,11 +18,11 @@ function Header() {
         <img className="logo" src={logo} width="80" height="80" />
       </a>
       <div className="header-middle">
-        {/* {shouldShowDigitalCanvasLink && ( // Utilisez la condition ici pour afficher ou masquer le lien */}
-        <a href="/OurCanvases" className="header-link">
-          Get your digital canvas
-        </a>
-        {/* )} */}
+        {shouldShowDigitalCanvasLink && ( // Utilisez la condition ici pour afficher ou masquer le lien
+          <a href="/OurCanvases" className="header-link">
+            Get your digital canvas
+          </a>
+        )}
       </div>
       <nav>
         {/* Le reste de votre code */}
