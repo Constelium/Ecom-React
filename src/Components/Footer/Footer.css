@@ -27,6 +27,7 @@ footer {
   display: flex; /* Aligner les enfants du formulaire en ligne */
   justify-content: center; /* Centrer le formulaire horizontalement */
   align-items: center; /* Centrer le formulaire verticalement */
+  margin: 0;
 }
 
 .footerdiv p {
@@ -82,9 +83,16 @@ footer {
   margin: 0; /* Ensuring there are no additional margins */
 }
 
-form {
+.emailing form {
+  height: 40px;
   display: flex;
   flex-direction: row;
+  margin: 0;
+}
+
+.emailInput {
+  padding: 0;
+  margin: 0;
 }
 
 .allRights {

@@ -82,6 +82,7 @@ function Footer() {
         <div className="emailing">
           <form onSubmit={handleSubmit}>
             <input
+              className="emailInput"
               type="email"
               placeholder="Your email address"
               name="email"
