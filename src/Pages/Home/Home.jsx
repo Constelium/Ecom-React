@@ -28,7 +28,12 @@ function HomePage() {
             <div className="section">
               <h2>Display Your Passion</h2>
               <div className="caseImg">
-                <img src={imagevitrine2} width="100%" height="300px" />
+                <img
+                  src={imagevitrine2}
+                  alt="Product on wall"
+                  width="100%"
+                  height="300px"
+                />
               </div>
               <p>
                 With Constelium, your NFT collection comes to life in the most
