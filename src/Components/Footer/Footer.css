@@ -41,6 +41,13 @@ footer {
   color: var(--text-color);
 }
 
+.FooterLinks img {
+  margin: 2.5px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
 .FooterLinks p {
   color: var(--text-color);
 }
