@@ -50,8 +50,8 @@ function Footer() {
     <footer>
       <div className="FooterLinks">
         <div>
-          <h3>Contact us</h3>
-          <p>Email: constelium.xyz@gmail.com</p>
+          <h3>Email</h3>
+          <p>constelium.xyz@gmail.com</p>
         </div>
         <div>
           <h3>Follow us</h3>
@@ -97,7 +97,7 @@ function Footer() {
           </form>
         </div>
       </div>
-      <p className="allRights">©Constelium // All rights reserved.</p>
+      {/* <p className="allRights">©Constelium // All rights reserved.</p> */}
     </footer>
   );
 }

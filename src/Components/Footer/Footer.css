@@ -42,7 +42,7 @@ footer {
   align-items: left;
   flex-direction: column;
   width: 33%;
-  color: var(--text-color);
+  color: var(--title-color);
 }
 
 .FooterLinks img {
@@ -95,5 +95,5 @@ footer {
   margin: 0;
 }
 
-.allRights {
-}
+/* .allRights {
+} */
