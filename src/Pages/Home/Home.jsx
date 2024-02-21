@@ -16,7 +16,7 @@ function HomePage() {
           <h2>Welcome to the World of Constelium</h2>
           {/* J'ai déjà réglé les tailles d'images pour quelle rentre dans les cases (width,height) à changer si besoin*/}
           <div className="caseImg">
-            <img src="" width="100%" height="300px" />
+            <img src="" alt="" width="100%" height="300px" />
           </div>
           <p>
             Discover a premium visual experience with Constelium: a perfect
@@ -47,7 +47,7 @@ function HomePage() {
         <div className="section">
           <h2>Monitor Your Cryptos</h2>
           <div className="caseImg">
-            <img src="" width="100%" height="300px" />
+            <img src="" alt="" width="100%" height="300px" />
           </div>
           <p>
             But Constelium isn't just for display; it's a dynamic dashboard for
@@ -59,7 +59,7 @@ function HomePage() {
         <div className="section">
           <h2>Inclusive Technology</h2>
           <div className="caseImg">
-            <img src="" width="100%" height="300px" />
+            <img src="" alt="" width="100%" height="300px" />
           </div>
           <p>
             We understand the importance of accessibility. That's why our
@@ -70,7 +70,7 @@ function HomePage() {
         <div className="section">
           <h2>Limitless Customization</h2>
           <div className="caseImg">
-            <img src="" width="100%" height="300px" />
+            <img src="" alt="" width="100%" height="300px" />
           </div>
           <p>
             Constelium gives you the choice: one base model for those who
@@ -82,7 +82,7 @@ function HomePage() {
         <div className="section">
           <h2>Join the Visual Revolution</h2>
           <div className="caseImg">
-            <img src="" width="100%" height="300px" />
+            <img src="" alt="" width="100%" height="300px" />
           </div>
           <p>
             With Constelium, step into an era where digital art and finance meet
