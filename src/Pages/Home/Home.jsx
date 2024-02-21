@@ -9,6 +9,9 @@ function HomePage() {
     <>
       <Header />
       <main className="mainHome">
+        <div className="banner">
+          <img src="" alt="" />
+        </div>
         <div className="section">
           <h2>Welcome to the World of Constelium</h2>
           {/* J'ai déjà réglé les tailles d'images pour quelle rentre dans les cases (width,height) à changer si besoin*/}
