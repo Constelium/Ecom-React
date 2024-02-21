@@ -25,9 +25,20 @@ function Header() {
         )}
       </div>
       <nav>
-        {/* Le reste de votre code */}
         <button id="menuButton" className="menu-button" onClick={togglePopup}>
-          <i className="icon">☰</i>
+          {/* <i className="icon">☰</i> */}
+          <svg id="hamburger" className="Header__toggle-svg">
+            <g
+              stroke="#fff"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path id="top-line" d="M8,10 L30,10 Z"></path>
+              <path id="middle-line" d="M8,20 L30,20 Z"></path>
+              <path id="bottom-line" d="M8,30 L30,30 Z"></path>
+            </g>
+          </svg>
         </button>
         {isPopupOpen && (
           <div id="dropdownMenu" className="dropdown-menu">

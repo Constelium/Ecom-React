@@ -15,7 +15,7 @@ footer {
 }
 
 .footerdiv {
-  width: 70%;
+  width: auto;
   height: 100%;
   display: flex;
   justify-content: center;
