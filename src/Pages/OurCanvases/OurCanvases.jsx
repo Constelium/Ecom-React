@@ -15,9 +15,6 @@ function OurCanvases() {
       <Header />
       <main className="OurCanvasesMain">
         <section className="product-page">
-          <div className="product-image">
-            <img src="" alt="Nom du Produit" />
-          </div>
           <div className="product-details">
             <h1>Digital Canva</h1>
             <p className="price">1000 €</p>
