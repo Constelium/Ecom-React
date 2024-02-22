@@ -80,21 +80,20 @@ function Footer() {
       </div>
       <div className="footerdiv">
         <div className="emailing">
-          <form onSubmit={handleSubmit}>
-            <input
-              className="emailInput"
-              type="email"
-              placeholder="Your email address"
-              name="email"
-              value={mail}
-              onChange={handleMailChange}
-              required
-              aria-invalid={!isValidMail}
-            />
-            <button type="submit" disabled={!isValidMail}>
-              Sign up
-            </button>
-          </form>
+          <input
+            id="emailInput"
+            type="email"
+            placeholder="Your email address"
+            name="email"
+            value={mail}
+            onChange={handleMailChange}
+            onSubmit={handleSubmit}
+            required
+            aria-invalid={!isValidMail}
+          />
+          <button type="submit" disabled={!isValidMail}>
+            Sign up
+          </button>
         </div>
       </div>
       {/* <p className="allRights">©Constelium // All rights reserved.</p> */}

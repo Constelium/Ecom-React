@@ -60,7 +60,7 @@ footer {
 .emailing {
   display: flex; /* Aligner les enfants du formulaire en ligne */
   justify-content: center; /* Centrer le formulaire horizontalement */
-  align-items: center;
+  align-items: start;
 }
 
 .emailing h4 {
@@ -73,7 +73,7 @@ footer {
 }
 
 .emailing button {
-  height: 40px; /* Ensuring the button has the same height as the input */
+  height: 37px; /* Ensuring the button has the same height as the input */
   padding: 0 15px; /* Adjusting padding to match the design and text length */
   background-color: #34e28b; /* Example button color */
   color: #010101;
@@ -81,18 +81,14 @@ footer {
   cursor: pointer; /* To indicate the button is clickable */
   font-size: 16px; /* Matching the font size with the input */
   margin: 0; /* Ensuring there are no additional margins */
+  border-radius: 0 5px 5px 0;
 }
 
-.emailing form {
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-}
-
-.emailInput {
+#emailInput {
   padding: 0;
   margin: 0;
+  border-radius: 5px 0 0 5px;
+  height: 35px;
 }
 
 /* .allRights {
