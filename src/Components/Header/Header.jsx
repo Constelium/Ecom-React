@@ -29,7 +29,7 @@ function Header() {
           {/* <i className="icon">☰</i> */}
           <svg id="hamburger" className="Header__toggle-svg">
             <g
-              stroke="#fff"
+              stroke="#010101"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
