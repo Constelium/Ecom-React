@@ -5,7 +5,7 @@ const DynamiqueText = () => {
   useEffect(() => {
     const target = document.getElementById("text-target");
 
-    let array = ["Digital canvas", "Dashboard", "Everything"];
+    let array = ["Digital canvas", "Dashboard", "Everything", "WEB3"];
     let wordIndex = 0;
 
     const createWord = () => {
@@ -27,7 +27,7 @@ const DynamiqueText = () => {
 
   return (
     <span className="dynamic-text">
-      <span>Constelium, display your &rarr;</span>
+      <span>Constelium : display your </span>
       <span id="text-target"></span>
     </span>
   );

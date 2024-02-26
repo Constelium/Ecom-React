@@ -40,22 +40,26 @@
 @keyframes wordEntry {
   0% {
     transform: translateY(-200px);
+
     opacity: 0;
     color: #059b00;
   }
   30% {
     transform: translateY(0);
+
     opacity: 1;
     color: #059b00;
   }
   50% {
-    transform: translateY(-50px);
+    transform: translateY(50px);
+
     opacity: 1;
     color: #059b00;
   }
 
   100% {
     transform: translateY(0);
+
     opacity: 1;
     color: #059b00;
   }
