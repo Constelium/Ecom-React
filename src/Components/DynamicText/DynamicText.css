@@ -11,38 +11,51 @@
     display: flex;
     width: 300px;
     text-align: left;
-    animation: color 1s alternate infinite;
+    animation: color 0.75s alternate infinite;
     perspective: 200px;
     transform: translateX(26px);
   }
 }
 
-@keyframes wordEntry {
-  from {
-    transform: translateY(-200px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes color {
+/* @keyframes color {
   0% {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
   33% {
-    color: #08ec00;
+    color: #059b00;
   }
   66% {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
   100% {
-    color: #08ec00;
+    color: #059b00;
   }
-}
+} */
 
 .word {
-  animation: wordEntry 0.5s ease-out forwards;
+  animation: wordEntry 1s ease-out;
+}
+
+@keyframes wordEntry {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+    color: #059b00;
+  }
+  30% {
+    transform: translateY(0);
+    opacity: 1;
+    color: #059b00;
+  }
+  50% {
+    transform: translateY(-50px);
+    opacity: 1;
+    color: #059b00;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    color: #059b00;
+  }
 }
