@@ -11,7 +11,7 @@
     display: flex;
     width: 300px;
     text-align: left;
-    animation: color 0.5s alternate infinite;
+    animation: color 1s alternate infinite;
     perspective: 200px;
     transform: translateX(26px);
   }
@@ -19,7 +19,7 @@
 
 @keyframes wordEntry {
   from {
-    transform: translateY(-300px);
+    transform: translateY(-200px);
     opacity: 0;
   }
   to {
@@ -30,13 +30,13 @@
 
 @keyframes color {
   0% {
-    color: rgb(251, 255, 0);
+    color: rgb(0, 0, 0);
   }
   33% {
     color: #08ec00;
   }
   66% {
-    color: rgb(251, 255, 0);
+    color: rgb(0, 0, 0);
   }
   100% {
     color: #08ec00;
