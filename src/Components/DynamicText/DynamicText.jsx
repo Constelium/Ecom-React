@@ -27,7 +27,7 @@ const DynamiqueText = () => {
 
   return (
     <span className="dynamic-text">
-      <span>Constelium, display your</span>
+      <span>Constelium, display your &rarr;</span>
       <span id="text-target"></span>
     </span>
   );
