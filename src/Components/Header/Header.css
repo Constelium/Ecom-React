@@ -16,6 +16,7 @@ header {
   padding: 5px;
   box-shadow: -5px -7px 20px var(--button-color);
   /* transition: 0.15s; */
+  z-index: 999;
 }
 
 .logo-link {
