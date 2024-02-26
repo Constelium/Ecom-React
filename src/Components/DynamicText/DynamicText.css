@@ -16,3 +16,18 @@
     transform: translateX(26px);
   }
 }
+
+@keyframes wordEntry {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.word {
+  animation: wordEntry 0.5s ease-out forwards;
+}

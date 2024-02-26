@@ -9,8 +9,7 @@ const DynamiqueText = () => {
     let wordIndex = 0;
 
     const createWord = () => {
-      // Supprimer le contenu précédent
-      target.innerHTML = "";
+      target.innerHTML = ""; // Supprimer le contenu précédent
 
       const word = document.createElement("span");
       target.appendChild(word);
@@ -18,15 +17,12 @@ const DynamiqueText = () => {
       word.classList.add("word");
       word.textContent = array[wordIndex];
 
-      // Incrémenter wordIndex pour passer au mot suivant
-      wordIndex = (wordIndex + 1) % array.length;
+      wordIndex = (wordIndex + 1) % array.length; // Incrémenter wordIndex pour passer au mot suivant
     };
 
-    // Changer le mot toutes les 2 secondes
-    setInterval(createWord, 2000);
+    setInterval(createWord, 2000); // Changer le mot toutes les 2 secondes
 
-    // Initialiser avec le premier mot
-    createWord();
+    createWord(); // Initialiser avec le premier mot
   }, []);
 
   return (
