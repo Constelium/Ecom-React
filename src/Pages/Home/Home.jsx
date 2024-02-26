@@ -1,5 +1,6 @@
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
+import DynamicText from "../../Components/DynamicText/DynamicText";
 import "./Home.css";
 // image dans la section Display Your Passion (imagevitrine2)
 import imagevitrine2 from "../../assets/imagevitrine2.png";
@@ -10,7 +11,7 @@ function HomePage() {
       <Header />
       <main className="mainHome">
         <div className="banner">
-          <img src="" alt="" />
+          <DynamicText />
         </div>
         <div className="section">
           <h2>Welcome to the World of Constelium</h2>
