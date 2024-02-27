@@ -4,6 +4,7 @@ import DynamicText from "../../Components/DynamicText/DynamicText";
 import "./Home.css";
 // image dans la section Display Your Passion (imagevitrine2)
 import imagevitrine2 from "../../assets/imagevitrine2.png";
+import Banner from "../../assets/Banner.gif";
 
 function HomePage() {
   return (
@@ -13,6 +14,7 @@ function HomePage() {
         <div className="banner">
           <DynamicText />
         </div>
+        <img src={Banner} alt="Banner" width="210%" height="400px" />
         <div className="section">
           <h2>Welcome to the World of Constelium</h2>
           {/* J'ai déjà réglé les tailles d'images pour quelle rentre dans les cases (width,height) à changer si besoin*/}
