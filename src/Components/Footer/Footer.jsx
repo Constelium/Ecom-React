@@ -50,11 +50,11 @@ function Footer() {
     <footer>
       <div className="FooterLinks">
         <div>
-          <h3>Email</h3>
+          <h3>Contact</h3>
           <p>constelium.xyz@gmail.com</p>
         </div>
         <div>
-          <h3>Follow us</h3>
+          <h3>Socials</h3>
           <a
             href="https://twitter.com/constelium"
             target="_blank"
@@ -83,7 +83,7 @@ function Footer() {
           <input
             id="emailInput"
             type="email"
-            placeholder="Your email address"
+            placeholder="Your email"
             name="email"
             value={mail}
             onChange={handleMailChange}
@@ -92,7 +92,7 @@ function Footer() {
             aria-invalid={!isValidMail}
           />
           <button type="submit" disabled={!isValidMail}>
-            Sign up
+            Subscribe
           </button>
         </div>
       </div>

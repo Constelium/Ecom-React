@@ -64,7 +64,7 @@ footer {
 }
 
 .emailing h4 {
-  background-color: var(--button-color);
+  background-color: #333333;
 }
 
 .NewsletterBlock h4 {
@@ -75,8 +75,8 @@ footer {
 .emailing button {
   height: 37px; /* Ensuring the button has the same height as the input */
   padding: 0 15px; /* Adjusting padding to match the design and text length */
-  background-color: #34e28b; /* Example button color */
-  color: #010101;
+  background-color: #333333; /* Example button color */
+  color: #34e28b;
   border: none; /* Removing any default border */
   cursor: pointer; /* To indicate the button is clickable */
   font-size: 16px; /* Matching the font size with the input */
