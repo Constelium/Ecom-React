@@ -79,6 +79,7 @@ function Footer() {
         </div>
       </div>
       <div className="footerdiv">
+        <h3>Newsletter</h3>
         <div className="emailing">
           <input
             id="emailInput"

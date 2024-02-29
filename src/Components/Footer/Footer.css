@@ -18,9 +18,14 @@ footer {
   width: auto;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: stretch;
   align-items: center;
   flex-direction: column;
+}
+
+.footerdiv h3 {
+  margin: 10px 0;
+  color: #e4dcdc;
 }
 
 .footerdiv form {
@@ -43,6 +48,10 @@ footer {
   flex-direction: column;
   width: 33%;
   color: var(--title-color);
+}
+
+.FooterLinks h3 {
+  margin: 5px 0;
 }
 
 .FooterLinks img {
@@ -77,7 +86,8 @@ footer {
   padding: 0 15px; /* Adjusting padding to match the design and text length */
   background-color: #333333; /* Example button color */
   color: #34e28b;
-  border: none; /* Removing any default border */
+  border: 1px solid #34e28b; /* Removing any default border */
+  border-left: none;
   cursor: pointer; /* To indicate the button is clickable */
   font-size: 16px; /* Matching the font size with the input */
   margin: 0; /* Ensuring there are no additional margins */
@@ -89,11 +99,13 @@ footer {
   margin: 0;
   background-color: #333333;
   border-radius: 5px 0 0 5px;
+  border-right: none;
   height: 35px;
 }
 
 input::placeholder {
-  color: #e4dcdc;
+  color: #99999c;
+  padding-left: 13px;
 }
 
 /* .allRights {
