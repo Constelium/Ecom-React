@@ -87,8 +87,13 @@ footer {
 #emailInput {
   padding: 0;
   margin: 0;
+  background-color: #333333;
   border-radius: 5px 0 0 5px;
   height: 35px;
+}
+
+input::placeholder {
+  color: #e4dcdc;
 }
 
 /* .allRights {
