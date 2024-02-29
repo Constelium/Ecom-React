@@ -123,6 +123,9 @@ p {
   margin-bottom: 90px;
   margin-top: 70px;
   border: 4px solid white;
+  background-image: url("../../assets/Banner.gif");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .section {
