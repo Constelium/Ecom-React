@@ -98,7 +98,7 @@ function Footer() {
         </div>
       </div>
       <div className="allRights">
-        <p>©Constelium // All rights reserved</p>
+        <p>©Constelium All rights reserved</p>
       </div>
     </footer>
   );
