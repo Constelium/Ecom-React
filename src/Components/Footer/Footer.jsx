@@ -97,7 +97,9 @@ function Footer() {
           </button>
         </div>
       </div>
-      {/* <p className="allRights">©Constelium // All rights reserved.</p> */}
+      <div className="allRights">
+        <p>©Constelium // All rights reserved</p>
+      </div>
     </footer>
   );
 }

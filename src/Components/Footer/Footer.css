@@ -108,5 +108,6 @@ input::placeholder {
   padding-left: 13px;
 }
 
-/* .allRights {
-} */
+.allRights {
+  color: #e4dcdc;
+}
