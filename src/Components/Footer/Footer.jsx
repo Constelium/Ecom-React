@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"; // Ajoutez cette ligne pour importer useState
-// import axios from "axios";   Je l'ai mis en commentaire car se chemin n'était pas bon lors du "npm run dev"
-import axios from "../../../package.json";
+import axios from "axios";
+// import axios from "../../../package.json";
 import "./Footer.css";
 import X from "../../assets/x.png";
 import LinkedIn from "../../assets/LinkedIn.png";
@@ -30,17 +30,12 @@ function Footer() {
     try {
       const response = await axios.post(
         "https://api-const.vercel.app/mail/register",
-        {
-          mail,
-        }
+        { mail }
       );
-      console.log(mail);
-
-      const data = await response.json();
-      if (data.message) {
-        console.log("User registered:", data.message);
+      console.log("User registered:", response.data); // Utilisez response.data au lieu de response.json()
+      if (response.data.message) {
+        console.log("User registered:", response.data.message);
       }
-      console.log(data);
     } catch (error) {
       console.error("There was an error registering the user", error);
     }
@@ -78,7 +73,9 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div className="footerdiv">
+      <form className="footerdiv" onSubmit={handleSubmit}>
+        {" "}
+        {/* Modifier ici */}
         <h3>Newsletter</h3>
         <div className="emailing">
           <input
@@ -88,15 +85,15 @@ function Footer() {
             name="email"
             value={mail}
             onChange={handleMailChange}
-            onSubmit={handleSubmit}
             required
-            aria-invalid={!isValidMail}
+            aria-invalid={!isValidMail.toString()} // Convertir en chaîne de caractères
           />
           <button type="submit" disabled={!isValidMail}>
             Subscribe
           </button>
         </div>
-      </div>
+      </form>{" "}
+      {/* Fin du formulaire */}
       <div className="allRights">
         <p>©Constelium All rights reserved</p>
       </div>
