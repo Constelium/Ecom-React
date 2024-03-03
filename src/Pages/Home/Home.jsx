@@ -1,6 +1,7 @@
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import DynamicText from "../../Components/DynamicText/DynamicText";
+import NewsletterPopup from "../../Components/NewsletterPopup/NewsletterPopup";
 import "./Home.css";
 // image dans la section Display Your Passion (imagevitrine2)
 import imagevitrine2 from "../../assets/imagevitrine2.png";
@@ -93,6 +94,7 @@ function HomePage() {
           </p>
         </div>
       </main>
+      <NewsletterPopup />
       <Footer />
     </>
   );

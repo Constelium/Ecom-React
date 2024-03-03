@@ -12,38 +12,48 @@
 }
 
 .newsletter-content {
-  background: white;
+  background: #e4dcdc;
   padding: 20px;
   border-radius: 5px;
   text-align: center;
 }
 
+.newsletter-content h2 {
+  color: #010101;
+}
+
 .close-btn {
   float: right;
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
 }
 
 form {
+  display: flex; /* Ajout de flexbox pour aligner les éléments du formulaire */
   margin-top: 20px;
+  justify-content: center; /* Centrer les éléments dans le formulaire */
+  align-items: center; /* Centrer les éléments verticalement */
 }
 
 input[type="email"] {
   padding: 10px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: #333333;
+  margin-right: -1px; /* Ajustez si nécessaire pour éliminer l'espace entre l'input et le bouton */
+  border: 3px solid;
+  border-radius: 5px 0 0 5px; /* Bord arrondi seulement sur les côtés gauche */
+  border-right: none; /* Supprimer la bordure droite */
+}
+
+input::placeholder {
+  color: #99999c;
+  padding-left: 13px;
 }
 
 button {
-  height: 37px; /* Ensuring the button has the same height as the input */
-  padding: 0 15px; /* Adjusting padding to match the design and text length */
-  background-color: #333333; /* Example button color */
-  color: #34e28b;
-  border: 1px solid #34e28b; /* Removing any default border */
-  border-left: none;
-  cursor: pointer; /* To indicate the button is clickable */
-  font-size: 16px; /* Matching the font size with the input */
-  margin: 0; /* Ensuring there are no additional margins */
-  border-radius: 0 5px 5px 0;
+  padding: 10px 20px;
+  background-color: #34e28b;
+  color: #010101;
+  border: none;
+  border-radius: 5px 5px 5px 5px; /* Bord arrondi seulement sur les côtés droit */
+  cursor: pointer;
 }
