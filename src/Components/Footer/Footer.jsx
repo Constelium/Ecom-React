@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"; // Ajoutez cette ligne pour importer useState
-import axios from "axios";
-// import axios from "../../../package.json";
+// import axios from "axios";
+import axios from "../../../package.json";
 import "./Footer.css";
 import X from "../../assets/x.png";
 import LinkedIn from "../../assets/LinkedIn.png";

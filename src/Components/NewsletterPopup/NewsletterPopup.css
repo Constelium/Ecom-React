@@ -1,0 +1,49 @@
+.newsletter-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.newsletter-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close-btn {
+  float: right;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  height: 37px; /* Ensuring the button has the same height as the input */
+  padding: 0 15px; /* Adjusting padding to match the design and text length */
+  background-color: #333333; /* Example button color */
+  color: #34e28b;
+  border: 1px solid #34e28b; /* Removing any default border */
+  border-left: none;
+  cursor: pointer; /* To indicate the button is clickable */
+  font-size: 16px; /* Matching the font size with the input */
+  margin: 0; /* Ensuring there are no additional margins */
+  border-radius: 0 5px 5px 0;
+}
