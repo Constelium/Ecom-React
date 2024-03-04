@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./NewsletterPopup.css";
 import axios from "axios";
 
 const NewsletterPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [mail, setMail] = useState("");
+  const form = useRef();
 
   // État pour la validation de l'email
   const [isValidMail, setIsValidMail] = useState(false);
@@ -17,7 +18,7 @@ const NewsletterPopup = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 15000);
+    }, 3000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -29,17 +30,24 @@ const NewsletterPopup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const formMess = document.querySelector(".formMessage");
+    formMess.innerHTML =
+      "<p className='success'>YES I !!! DUM DUM DUM !!!!</p>";
+    form.current.reset();
+
     try {
       const response = await axios.post(
         "https://api-const.vercel.app/mail/register",
         { mail }
       );
-      console.log("User registered:", response.data); // Utilisez response.data au lieu de response.json()
       if (response.data.message) {
         console.log("User registered:", response.data.message);
+        form.current.reset();
       }
     } catch (error) {
       console.error("There was an error registering the user", error);
+      formMess.innerHTML =
+        "<p className='error'>There was an error registering the user</p>";
     }
   };
 
@@ -54,7 +62,7 @@ const NewsletterPopup = () => {
           </button>
           <h2>Subscribe to Our Newsletter</h2>
           <p>Get the latest news and updates directly to your inbox.</p>
-          <form onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit}>
             <input
               id="emailInput"
               type="email"
@@ -67,6 +75,7 @@ const NewsletterPopup = () => {
             />
             <button type="submit">Subscribe</button>
           </form>
+          <div className="formMessage"></div>
         </div>
       </div>
     )
