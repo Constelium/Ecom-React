@@ -35,6 +35,7 @@ function Footer() {
       console.log("User registered:", response.data); // Utilisez response.data au lieu de response.json()
       if (response.data.message) {
         console.log("User registered:", response.data.message);
+        alert.apply("it's OK");
       }
     } catch (error) {
       console.error("There was an error registering the user", error);
