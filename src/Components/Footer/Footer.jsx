@@ -27,18 +27,22 @@ function Footer() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const formMess = document.querySelector(".formMessage");
+    formMess.innerHTML =
+      "<p className='success'>YES I !!! DUM DUM DUM !!!!</p>";
+
     try {
       const response = await axios.post(
         "https://api-const.vercel.app/mail/register",
         { mail }
       );
-      console.log("User registered:", response.data); // Utilisez response.data au lieu de response.json()
       if (response.data.message) {
         console.log("User registered:", response.data.message);
-        alert.apply("it's OK");
       }
+      setMail("");
     } catch (error) {
-      console.error("There was an error registering the user", error);
+      formMess.innerHTML =
+        "<p className='error'>There was an error registering the user</p>";
     }
   };
 
@@ -75,8 +79,6 @@ function Footer() {
         </div>
       </div>
       <form className="footerdiv" onSubmit={handleSubmit}>
-        {" "}
-        {/* Modifier ici */}
         <h3>Newsletter</h3>
         <div className="emailing">
           <input
@@ -93,8 +95,8 @@ function Footer() {
             Subscribe
           </button>
         </div>
-      </form>{" "}
-      {/* Fin du formulaire */}
+      </form>
+      <div className="formMessage"></div>
       <div className="allRights">
         <p>©Constelium All rights reserved</p>
       </div>

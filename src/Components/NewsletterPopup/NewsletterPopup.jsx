@@ -1,11 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import "./NewsletterPopup.css";
 import axios from "axios";
 
 const NewsletterPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [mail, setMail] = useState("");
-  const form = useRef();
 
   // État pour la validation de l'email
   const [isValidMail, setIsValidMail] = useState(false);
@@ -33,7 +32,6 @@ const NewsletterPopup = () => {
     const formMess = document.querySelector(".formMessage");
     formMess.innerHTML =
       "<p className='success'>YES I !!! DUM DUM DUM !!!!</p>";
-    form.current.reset();
 
     try {
       const response = await axios.post(
@@ -42,10 +40,9 @@ const NewsletterPopup = () => {
       );
       if (response.data.message) {
         console.log("User registered:", response.data.message);
-        form.current.reset();
       }
+      setMail("");
     } catch (error) {
-      console.error("There was an error registering the user", error);
       formMess.innerHTML =
         "<p className='error'>There was an error registering the user</p>";
     }
@@ -62,7 +59,7 @@ const NewsletterPopup = () => {
           </button>
           <h2>Subscribe to Our Newsletter</h2>
           <p>Get the latest news and updates directly to your inbox.</p>
-          <form ref={form} onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <input
               id="emailInput"
               type="email"
