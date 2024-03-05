@@ -17,7 +17,7 @@ const NewsletterPopup = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 3000);
+    }, 10000);
     return () => clearTimeout(timer);
   }, []);
 
