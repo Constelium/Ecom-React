@@ -30,7 +30,8 @@ const NewsletterPopup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formMess = document.querySelector(".formMessage");
-    formMess.innerHTML = "<p className='success'>Successfully subscribed</p>";
+    formMess.innerHTML =
+      "<p className='success'>Successfully subscribed 🤝</p>";
 
     try {
       const response = await axios.post(
