@@ -57,3 +57,7 @@ button {
   border-radius: 5px 5px 5px 5px; /* Bord arrondi seulement sur les côtés droit */
   cursor: pointer;
 }
+
+.success {
+  color: #34e28b;
+}
