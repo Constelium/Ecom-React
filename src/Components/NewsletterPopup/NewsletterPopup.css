@@ -58,6 +58,6 @@ button {
   cursor: pointer;
 }
 
-.success {
+.success p {
   color: #34e28b;
 }
