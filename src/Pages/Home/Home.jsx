@@ -16,6 +16,9 @@ function HomePage() {
     <>
       <Header />
       <main className="mainHome">
+        {/* <div className="video-background"> */}
+        {/* <video autoPlay loop muted className="background-video">
+            <source src="chemin-vers-votre-video.mp4" type="video/mp4" /> */}
         <div className="banner">
           <DynamicText />
         </div>
