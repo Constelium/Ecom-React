@@ -2,7 +2,7 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import DynamicText from "../../Components/DynamicText/DynamicText";
 import NewsletterPopup from "../../Components/NewsletterPopup/NewsletterPopup";
-import Analytics from "../../Components/Analytics/Analytics";
+import useAnalytics from "../../Components/useAnalytics/useAnalytics.jsx";
 import "./Home.css";
 // image dans la section Display Your Passion (imagevitrine2)
 import imagevitrine1 from "../../assets/Demonstration1.gif";
@@ -12,7 +12,7 @@ import imagevitrine4 from "../../assets/imagevitrine2.png";
 import imagevitrine5 from "../../assets/imagevitrine2.png";
 
 function HomePage() {
-  Analytics();
+  useAnalytics();
 
   return (
     <>

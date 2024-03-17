@@ -4,7 +4,7 @@ import ReactGA from "react-ga4";
 
 const TRACKING_ID = "G-Z2LPPK69XW"; // Remplacez par votre propre ID de suivi
 
-function Analytics() {
+function useAnalytics() {
   const location = useLocation();
 
   useEffect(() => {
@@ -13,4 +13,4 @@ function Analytics() {
   }, [location]);
 }
 
-export default Analytics;
+export default useAnalytics;
