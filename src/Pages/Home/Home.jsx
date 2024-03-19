@@ -6,7 +6,7 @@ import useAnalytics from "../../Components/useAnalytics/useAnalytics";
 import "./Home.css";
 // image dans la section Display Your Passion (imagevitrine2)
 import imagevitrine1 from "../../assets/Demonstration1.gif";
-import imagevitrine2 from "../../assets/Demonstration2.gif";
+import imagevitrine2 from "../../assets/ImageNFT.jpg";
 import imagevitrine3 from "../../assets/Demonstration3.gif";
 import imagevitrine4 from "../../assets/imagevitrine2.png";
 import imagevitrine5 from "../../assets/imagevitrine2.png";
