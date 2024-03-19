@@ -4,11 +4,11 @@ import DynamicText from "../../Components/DynamicText/DynamicText";
 import NewsletterPopup from "../../Components/NewsletterPopup/NewsletterPopup";
 import useAnalytics from "../../Components/useAnalytics/useAnalytics";
 import "./Home.css";
-// image dans la section Display Your Passion (imagevitrine2)
-import imagevitrine1 from "../../assets/Demonstration1.gif";
-import imagevitrine2 from "../../assets/ImageNFT.jpg";
+
+import ImageVanGogh from "../../assets/ImageVanGogh.jpg";
+import ImageNFT from "../../assets/ImageeNFT.jpg";
+import ImagePerso from "../../assets/ImagePerso.jpg";
 import imagevitrine3 from "../../assets/Demonstration3.gif";
-import imagevitrine4 from "../../assets/imagevitrine2.png";
 import imagevitrine5 from "../../assets/imagevitrine2.png";
 
 function HomePage() {
@@ -28,7 +28,7 @@ function HomePage() {
           <h2>Welcome to the World of Constelium</h2>
           {/* J'ai déjà réglé les tailles d'images pour quelle rentre dans les cases (width,height) à changer si besoin*/}
           <div className="caseImg">
-            <img src={imagevitrine1} alt="" width="100%" height="300px" />
+            <img src={ImageVanGogh} alt="" width="100%" height="300px" />
           </div>
           <p>
             Discover a premium visual experience with Constelium: a perfect
@@ -42,7 +42,7 @@ function HomePage() {
           <h2>Display Your Passion</h2>
           <div className="caseImg">
             <img
-              src={imagevitrine2}
+              src={ImageNFT}
               alt="Product on wall"
               width="100%"
               height="300px"
@@ -71,7 +71,7 @@ function HomePage() {
         <div className="section">
           <h2>Inclusive Technology</h2>
           <div className="caseImg">
-            <img src="" alt="" width="100%" height="300px" />
+            <img src={imagevitrine5} alt="" width="100%" height="300px" />
           </div>
           <p>
             We understand the importance of accessibility. That's why our
@@ -82,7 +82,7 @@ function HomePage() {
         <div className="section">
           <h2>Limitless Customization</h2>
           <div className="caseImg">
-            <img src={imagevitrine4} alt="" width="100%" height="300px" />
+            <img src={ImagePerso} alt="" width="100%" height="300px" />
           </div>
           <p>
             Constelium gives you the choice: one base model for those who
