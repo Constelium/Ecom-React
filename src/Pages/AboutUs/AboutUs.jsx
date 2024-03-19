@@ -1,9 +1,10 @@
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./AboutUs.css";
-
+import useAnalytics from "../../Components/useAnalytics/useAnalytics";
 
 function AboutUs() {
+  useAnalytics();
   return (
     <div>
       <Header />

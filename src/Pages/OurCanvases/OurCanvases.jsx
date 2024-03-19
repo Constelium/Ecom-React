@@ -2,8 +2,10 @@ import { useState } from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./OurCanvases.css";
+import useAnalytics from "../../Components/useAnalytics/useAnalytics";
 
 function OurCanvases() {
+  useAnalytics();
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const togglePopup = () => {

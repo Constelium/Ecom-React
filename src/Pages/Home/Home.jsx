@@ -6,9 +6,8 @@ import useAnalytics from "../../Components/useAnalytics/useAnalytics";
 import "./Home.css";
 
 import ImageVanGogh from "../../assets/ImageVanGogh.jpg";
-import ImageNFT from "../../assets/ImageeNFT.jpg";
+import ImageNFT from "../../assets/ImageNFT.jpg";
 import ImagePerso from "../../assets/ImagePerso.jpg";
-import imagevitrine3 from "../../assets/Demonstration3.gif";
 import imagevitrine5 from "../../assets/imagevitrine2.png";
 
 function HomePage() {
@@ -59,7 +58,7 @@ function HomePage() {
         <div className="section">
           <h2>Monitor Your Cryptos</h2>
           <div className="caseImg">
-            <img src={imagevitrine3} alt="" width="100%" height="300px" />
+            <img src="" alt="" width="100%" height="300px" />
           </div>
           <p>
             But Constelium isn't just for display; it's a dynamic dashboard for

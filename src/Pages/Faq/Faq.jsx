@@ -1,8 +1,11 @@
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./Faq.css";
+import useAnalytics from "../../Components/useAnalytics/useAnalytics";
 
 function Faq() {
+  useAnalytics();
+
   return (
     <div>
       <Header />
