@@ -61,6 +61,7 @@ textarea {
   width: 90%;
   padding: 10px;
   margin-bottom: 20px;
+  background-color: #e4dcdc;
   border: 1px solid var(--button-color);
   border-radius: 5px;
 }
