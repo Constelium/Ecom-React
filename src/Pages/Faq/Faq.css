@@ -14,50 +14,44 @@
 }
 
 /* Styles spécifiques à la page FAQ */
-.faq p {
-  display: flex;
-  margin: 30px auto;
-  color: var(--text-color);
-  justify-content: center;
-  align-items: center;
+.faq {
+  padding: 20px;
 }
 
-.faq h5 {
-  display: flex;
-  margin: 30px auto;
-  color: var(--title-color);
+.faq-section {
+  margin: 0;
+  padding: 0;
 }
 
-.faq h3 {
-  text-align: center;
-  color: var(--text-color);
+.faq-article {
+  margin-bottom: 10px;
 }
 
-/* Styles pour le contenu principal (main) */
-main {
-  flex-direction: column;
-  font-size: 16px;
-  display: flex;
-  min-height: 100vh;
-  max-width: 600px;
-  margin: auto;
-  padding: 1px;
-  background-color: var(--background-color);
-  justify-content: center;
-  align-items: center;
+.faq-question {
+  cursor: pointer;
+  color: #34e28b;
+  background-color: #333333;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-/* Responsive design et autres styles spécifiques */
-@media (max-width: 768px) {
-  /* Ajoutez ici vos styles pour les écrans plus petits */
+.faq-answer {
+  display: none;
+  padding: 10px;
+  background-color: var(--background-Head-Foot);
+  border-radius: 5px;
 }
 
-/* Styles pour les liens */
-a {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+.faq-answer.active {
+  display: block;
+  width: 100%;
+  color: #010101;
+  background-color: #0ab35f;
+  border-radius: 5px;
+  border: 2px #34e28b;
 }
