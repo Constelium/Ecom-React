@@ -5,7 +5,13 @@ const DynamiqueText = () => {
   useEffect(() => {
     const target = document.getElementById("text-target");
 
-    let array = ["Digital canvas", "Dashboard", "Everything"];
+    let array = [
+      "Everything",
+      "NFT",
+      "Art",
+      "Crypto charts",
+      "Personal pictures",
+    ];
     let wordIndex = 0;
 
     const createWord = () => {
@@ -20,14 +26,14 @@ const DynamiqueText = () => {
       wordIndex = (wordIndex + 1) % array.length; // Incrémenter wordIndex pour passer au mot suivant
     };
 
-    setInterval(createWord, 2000); // Changer le mot toutes les 2 secondes
+    setInterval(createWord, 3000); // Changer le mot toutes les 2 secondes
 
     createWord(); // Initialiser avec le premier mot
   }, []);
 
   return (
     <span className="dynamic-text">
-      <span>Constelium : display your</span>
+      <span>Constelium ⇝ Display </span>
       <span id="text-target"></span>
     </span>
   );
