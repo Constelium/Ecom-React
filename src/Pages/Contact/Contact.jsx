@@ -34,7 +34,7 @@ function Contact() {
       <main>
         <div className="contact">
           <form onSubmit={sendEmail}>
-            <label htmlFor="nom">Nom :</label>
+            <label htmlFor="nom">Name :</label>
             <input type="text" name="nom" required />
             <br />
             <label htmlFor="email">Email :</label>
@@ -44,7 +44,7 @@ function Contact() {
             <br />
             <textarea name="message" rows="4" required></textarea>
             <br />
-            <input type="submit" value="Envoyer" />
+            <input type="submit" value="Send" />
           </form>
         </div>
       </main>
