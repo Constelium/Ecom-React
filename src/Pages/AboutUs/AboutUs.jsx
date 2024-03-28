@@ -17,7 +17,7 @@ function AboutUs() {
             <h5>Introduction :</h5>
             <p>
               Welcome to our artistic universe where digital art meets authentic
-              craftsmanship. At [Your Company Name], we believe in the power of
+              craftsmanship. At Constelium, we believe in the power of
               creativity and artisanal mastery to bring forth unique creations.
               Discover our story and passion for digital art.
             </p>
@@ -25,13 +25,13 @@ function AboutUs() {
           <div>
             <h5>Story :</h5>
             <p>
-              Since our inception in [Year of your company's establishment], we
-              have had the privilege of merging contemporary digital art with
-              the tradition of craftsmanship. Each digital artwork we create is
-              a result of collaboration between talented digital artists and
-              skilled artisan woodworkers. Our company was born from the belief
-              that art can transcend boundaries and seamlessly integrate into
-              our living spaces.
+              Since our inception in Constelium, we have had the privilege of
+              merging contemporary digital art with the tradition of
+              craftsmanship. Each digital artwork we create is a result of
+              collaboration between talented digital artists and skilled artisan
+              woodworkers. Our company was born from the belief that art can
+              transcend boundaries and seamlessly integrate into our living
+              spaces.
             </p>
           </div>
           <div>

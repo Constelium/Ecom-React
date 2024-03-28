@@ -98,7 +98,7 @@ function Footer() {
       </form>
       <div className="formMessage"></div>
       <div className="allRights">
-        <p>Copyright © 2024 Constelium®, all rights reserved.</p>
+        <p>Copyright © 2024 Constelium, all rights reserved.</p>
       </div>
     </footer>
   );
