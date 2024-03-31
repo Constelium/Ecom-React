@@ -102,8 +102,8 @@ function HomePage() {
             reign supreme.
           </p>
         </div>
+        <NewsletterPopup />
       </main>
-      <NewsletterPopup />
       <Footer />
     </>
   );

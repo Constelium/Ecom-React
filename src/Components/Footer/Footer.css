@@ -1,22 +1,23 @@
 footer {
-  position: fixed;
+  position: relative;
   font-size: 15px;
   height: 300px;
   width: 100%;
   bottom: 0;
   background-color: var(--background-Head-Foot);
-  padding: 5px;
+  padding: 0;
   margin: 0;
-  box-shadow: 10px 20px 40px var(--button-color);
+  box-shadow: 0px 20px 40px var(--button-color);
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .footerdiv {
-  width: auto;
-  height: 100%;
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 12px;
   display: flex;
   justify-content: stretch;
   align-items: center;
@@ -28,19 +29,12 @@ footer {
   color: #e4dcdc;
 }
 
-.footerdiv form {
-  display: flex; /* Aligner les enfants du formulaire en ligne */
-  justify-content: center; /* Centrer le formulaire horizontalement */
-  align-items: center; /* Centrer le formulaire verticalement */
-  margin: 0;
-}
-
 .footerdiv p {
   color: var(--text-color);
 }
 
 .FooterLinks {
-  margin-left: 10px;
+  margin-left: 30px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -110,8 +104,12 @@ input::placeholder {
 
 .allRights {
   color: #949494; /* La couleur du texte */
+  content: "";
+  width: 100%;
+  bottom: 0;
+  position: absolute;
   font-size: 12px; /* La taille de la police */
   text-align: center; /* Alignement du texte au centre */
   padding: 40px 0; /* Espace autour du texte */
-  background-color: #010101;
+  background-color: #141414;
 }
