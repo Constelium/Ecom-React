@@ -57,7 +57,10 @@ const NewsletterPopup = () => {
             &times;
           </button>
           <h2>Subscribe to Our Newsletter</h2>
-          <p>Get the latest news and updates directly to your inbox.</p>
+          <p>
+            Receive a free product with your first order to enrich your
+            experience with our Canva
+          </p>
           <form onSubmit={handleSubmit}>
             <input
               id="emailInput"
@@ -70,8 +73,8 @@ const NewsletterPopup = () => {
               aria-invalid={!isValidMail.toString()}
             />
             <button type="submit">Subscribe</button>
+            <div className="formMessage"></div>
           </form>
-          <div className="formMessage"></div>
         </div>
       </div>
     )

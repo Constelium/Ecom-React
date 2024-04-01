@@ -13,16 +13,19 @@
 
 .newsletter-content {
   background: #e4dcdc;
-  padding: 40px;
+  padding: 90px 50px;
   border-radius: 5px;
   text-align: center;
 }
 
 .newsletter-content h2 {
+  position: relative;
+  top: 1px;
   color: #010101;
 }
 
 .close-btn {
+  top: 0;
   float: right;
   font-size: 20px;
   cursor: pointer;
@@ -41,16 +44,15 @@ input[type="email"] {
   margin-right: -1px; /* Ajustez si nécessaire pour éliminer l'espace entre l'input et le bouton */
   border: 3px solid;
   border-radius: 5px 0 0 5px; /* Bord arrondi seulement sur les côtés gauche */
-  border-right: none; /* Supprimer la bordure droite */
 }
 
 input::placeholder {
   color: #99999c;
-  padding-left: 13px;
+  padding-left: 15px;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 10px 25px;
   background-color: #34e28b;
   color: #010101;
   border: none;
