@@ -57,13 +57,15 @@ const NewsletterPopup = () => {
             &times;
           </button>
           <h2>Subscribe to Our Newsletter</h2>
-          <p>
-            Receive a free product with your first order to enrich your
-            experience with our Canva
-          </p>
+          <div className="text-annonce">
+            <p>
+              Receive a free product with your first order to enrich your
+              experience with our Canvas.
+            </p>
+          </div>
           <form onSubmit={handleSubmit}>
             <input
-              id="emailInput"
+              id="input-popup"
               type="email"
               placeholder="Your email"
               name="email"

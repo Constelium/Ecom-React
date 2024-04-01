@@ -94,7 +94,7 @@ footer {
   background-color: #333333;
   border-radius: 5px 0 0 5px;
   border-right: none;
-  height: 35px;
+  height: 34px;
 }
 
 input::placeholder {
