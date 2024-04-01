@@ -5,6 +5,13 @@ import "./Footer.css";
 import X from "../../assets/x.png";
 import LinkedIn from "../../assets/LinkedIn.png";
 import TikTok from "../../assets/TikTok.png";
+import Visa from "../../assets/Visa.png";
+import Amex from "../../assets/Amex.png";
+import MasterCard from "../../assets/MasterCard.png";
+import Bitcoin from "../../assets/Bitcoin.png";
+import Ether from "../../assets/Ether.png";
+import Usdt from "../../assets/Usdt.png";
+import Usdc from "../../assets/Usdc.png";
 
 function Footer() {
   // État pour stocker la valeur de l'entrée de l'e-mail
@@ -94,6 +101,15 @@ function Footer() {
           <button type="submit" disabled={!isValidMail}>
             Subscribe
           </button>
+        </div>
+        <div className="payment-logos">
+          <img src={Visa} alt="Visa" />
+          <img src={Amex} alt="Amex" />
+          <img src={MasterCard} alt="MasterCard" />
+          <img src={Bitcoin} alt="Bitcoin" />
+          <img src={Ether} alt="Ethereum" />
+          <img src={Usdt} alt="USDT" />
+          <img src={Usdc} alt="USDC" />
         </div>
       </form>
       <div className="formMessage"></div>
