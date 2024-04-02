@@ -16,11 +16,12 @@ function Header() {
     <header>
       <a href="/" className="logo-link">
         <img className="logo" src={logo} width="80" height="80" />
+        {/* <h1>Constelium</h1> */}
       </a>
       <div className="header-middle">
         {shouldShowDigitalCanvasLink && ( // Utilisez la condition ici pour afficher ou masquer le lien
           <a href="/OurCanvases" className="header-link">
-            Get your digital canvas
+            Get your digital Canva
           </a>
         )}
       </div>

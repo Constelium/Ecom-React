@@ -115,7 +115,7 @@ svg:hover {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  background-color: var(--hoover-color);
+  background-color: #34e28b;
   color: var(--text-button);
   padding: 5px 7px;
   border: none;
@@ -145,19 +145,15 @@ svg:hover {
   /* transition: background-color 0.3s ease; Animation douce pour le survol */
 }
 
-.header-link {
-  text-decoration: none; /* Confirme que le surlignement est enlevé même lors du survol */
-}
-
 .menu-button:hover {
-  background-color: var(--hoover-color);
+  background-color: #0ab35f;
 }
 
 .dropdown-menu {
   /* display: none; */
   position: absolute;
   right: 0%;
-  background-color: var(--title-color);
+  background-color: #e4dcdc;
   min-width: 160px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   z-index: 999999;
