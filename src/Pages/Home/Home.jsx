@@ -9,7 +9,6 @@ import ImageVanGogh from "../../assets/ImageVanGogh.jpg";
 import ImageNFT from "../../assets/ImageNFT.jpg";
 import ImagePerso from "../../assets/ImagePerso.jpg";
 import imagevitrine5 from "../../assets/imagevitrine2.png";
-import Button from "../../Components/CryptoPaymentButton.jsx";
 
 function HomePage() {
   useAnalytics();
@@ -18,7 +17,6 @@ function HomePage() {
     <>
       <Header />
       <main className="mainHome">
-        <Button />
         {/* <div className="video-background"> */}
         {/* <video autoPlay loop muted className="background-video">
             <source src="chemin-vers-votre-video.mp4" type="video/mp4" /> */}
