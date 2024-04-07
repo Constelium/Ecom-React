@@ -1,0 +1,12 @@
+.crypto-pay-button {
+  display: flex;
+  justify-content: center; /* Centre le bouton horizontalement */
+  padding: 20px; /* Ajoute un peu d'espace autour du bouton */
+}
+
+/* Personnalisation du bouton désactivé */
+.crypto-pay-button .nextui-button--disabled {
+  background-color: #34e28b; /* Couleur de fond du bouton désactivé */
+  color: #010101; /* Couleur du texte du bouton désactivé */
+  cursor: not-allowed; /* Change le curseur pour indiquer l'action non autorisée */
+}
