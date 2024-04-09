@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer";
 import "./cart.css";
 
 // Supposons que nous ayons des articles de panier initiaux comme exemple
@@ -32,6 +34,7 @@ const CartPage = () => {
 
   return (
     <div>
+      <Header />
       <h2>Votre panier</h2>
       {cartItems.length > 0 ? (
         <div>
@@ -60,6 +63,7 @@ const CartPage = () => {
       ) : (
         <p>Votre panier est vide.</p>
       )}
+      <Footer />
     </div>
   );
 };
