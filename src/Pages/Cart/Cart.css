@@ -1,5 +1,4 @@
-/* CartPage.css */
-div {
+Cart.css div {
   font-family: Arial, sans-serif;
 }
 
@@ -33,8 +32,8 @@ input[type="number"] {
 }
 
 button {
-  background-color: #007bff;
-  color: white;
+  background-color: #34e28b;
+  color: #010101;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -42,7 +41,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #0ab35f;
 }
 
 .total-price {

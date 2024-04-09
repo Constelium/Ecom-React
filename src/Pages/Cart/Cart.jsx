@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
-import "./cart.css";
+import "./Cart.css";
 
 // Supposons que nous ayons des articles de panier initiaux comme exemple
 const initialCartItems = [
@@ -10,7 +10,7 @@ const initialCartItems = [
   // Ajoutez d'autres produits ici
 ];
 
-const CartPage = () => {
+const Cart = () => {
   const [cartItems, setCartItems] = useState(initialCartItems);
 
   const handleRemoveItem = (itemId) => {
@@ -35,37 +35,39 @@ const CartPage = () => {
   return (
     <div>
       <Header />
-      <h2>Votre panier</h2>
-      {cartItems.length > 0 ? (
-        <div>
-          {cartItems.map((item) => (
-            <div key={item.id}>
-              <h3>{item.name}</h3>
-              <p>Prix unitaire: {item.price}€</p>
-              <p>
-                Quantité:
-                <input
-                  type="number"
-                  value={item.quantity}
-                  onChange={(e) =>
-                    handleQuantityChange(item.id, parseInt(e.target.value))
-                  }
-                />
-              </p>
-              <p>Total: {(item.price * item.quantity).toFixed(2)}€</p>
-              <button onClick={() => handleRemoveItem(item.id)}>
-                Retirer du panier
-              </button>
-            </div>
-          ))}
-          <h3>Prix total du panier: {totalPrice}€</h3>
-        </div>
-      ) : (
-        <p>Votre panier est vide.</p>
-      )}
+      <main>
+        <h2>Your Cart</h2>
+        {cartItems.length > 0 ? (
+          <div>
+            {cartItems.map((item) => (
+              <div key={item.id}>
+                <h3>{item.name}</h3>
+                <p>Prix unitaire: {item.price}€</p>
+                <p>
+                  Quantité:
+                  <input
+                    type="number"
+                    value={item.quantity}
+                    onChange={(e) =>
+                      handleQuantityChange(item.id, parseInt(e.target.value))
+                    }
+                  />
+                </p>
+                <p>Total: {(item.price * item.quantity).toFixed(2)}€</p>
+                <button onClick={() => handleRemoveItem(item.id)}>
+                  Retirer du panier
+                </button>
+              </div>
+            ))}
+            <h3>Prix total du panier: {totalPrice}€</h3>
+          </div>
+        ) : (
+          <p>Votre panier est vide.</p>
+        )}
+      </main>
       <Footer />
     </div>
   );
 };
 
-export default CartPage;
+export default Cart;
