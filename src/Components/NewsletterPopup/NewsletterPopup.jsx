@@ -77,6 +77,7 @@ const NewsletterPopup = () => {
             <button type="submit">Subscribe</button>
             <div className="formMessage"></div>
           </form>
+          <div>No, thanks</div>
         </div>
       </div>
     )
