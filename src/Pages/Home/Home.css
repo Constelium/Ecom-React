@@ -136,10 +136,20 @@ p {
 }
 
 .caseImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   height: 300px;
   margin: 0;
-  padding: 0;
+  padding: auto;
   margin-bottom: 10px;
-  border: 4px solid white;
+  /* border: 4px solid white; */
+}
+
+.caseImg img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  clip-path: xywh(0 5px 100% 75% round 15% 0);
 }
