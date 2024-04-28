@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./OurCanvases.css";
@@ -6,17 +6,17 @@ import useAnalytics from "../../Components/useAnalytics/useAnalytics";
 
 function OurCanvases() {
   useAnalytics();
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  // const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  const togglePopup = () => {
-    setIsPopupOpen(!isPopupOpen);
-  };
+  // const togglePopup = () => {
+  //   setIsPopupOpen(!isPopupOpen);
+  // };
 
   return (
     <div>
       <Header />
       <main className="OurCanvasesMain">
-        <section className="product-page">
+        {/* <section className="product-page">
           <div className="product-details">
             <h1>Digital Canva</h1>
             <p className="price">1000 €</p>
@@ -125,7 +125,7 @@ function OurCanvases() {
             world. It's much more than a product; it's a passport to the future
             of digital art and digital asset management.
           </p>
-        </div>
+        </div> */}
       </main>
       <Footer />
     </div>

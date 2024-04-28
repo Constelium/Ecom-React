@@ -1,0 +1,39 @@
+[
+  {
+    "id": "mhlgikqgf",
+    "name": "WEB3Mini",
+    "size": "21",
+    "colors": ["white", "black", "grey", "red"],
+    "powers": ["US", "EU", "UK"],
+    "price US": "700$",
+    "price EU": "850$",
+    "imgCanvas": ""
+  },
+  {
+    "id": "jjvfdkljhf",
+    "name": "WEB3Classic",
+    "size": "27",
+    "colors": ["white", "black", "grey", "red"],
+    "powers": ["US", "EU", "UK"],
+    "price US": "800$",
+    "price EU": "900$"
+  },
+  {
+    "id": "cxdtryszaqgf",
+    "name": "WEB3Medium",
+    "size": "32",
+    "colors": ["white", "black", "grey", "red"],
+    "powers": ["US", "EU", "UK"],
+    "price US": "1000$",
+    "price EU": "1100$"
+  },
+  {
+    "id": "njocdsqvvezgte",
+    "name": "WEB3Max",
+    "size": "46",
+    "colors": ["white", "black", "grey", "red"],
+    "powers": ["US", "EU", "UK"],
+    "price US": "1200$",
+    "price EU": "1100$"
+  }
+]
