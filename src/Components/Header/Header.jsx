@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom"; // Importez useLocation
 import "./Header.css";
 import logo from "../../assets/LogoConst.png";
+import iconCart from "../../assets/cart.png";
 
 function Header() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -26,6 +27,9 @@ function Header() {
         )}
       </div>
       <nav>
+        <button className="iconCart">
+          <img src={iconCart} alt="" />
+        </button>
         <button id="menuButton" className="menu-button" onClick={togglePopup}>
           {/* <i className="icon">☰</i> */}
           <svg id="hamburger" className="Header__toggle-svg">
@@ -41,6 +45,7 @@ function Header() {
             </g>
           </svg>
         </button>
+
         {isPopupOpen && (
           <div id="dropdownMenu" className="dropdown-menu">
             <a href="/">Home</a>
