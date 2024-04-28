@@ -28,7 +28,9 @@ function Header() {
       </div>
       <nav>
         <button className="iconCart">
-          <img src={iconCart} alt="" />
+          <a href="/cart">
+            <img src={iconCart} alt="" />
+          </a>
         </button>
         <button id="menuButton" className="menu-button" onClick={togglePopup}>
           {/* <i className="icon">☰</i> */}
