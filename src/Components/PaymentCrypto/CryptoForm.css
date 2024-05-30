@@ -1,0 +1,22 @@
+#bp-payment-button {
+  display: inline-block;
+  background-color: #000; /* Fond noir */
+  color: #fff; /* Texte blanc */
+  font-size: 16px; /* Taille de la police */
+  padding: 10px 20px; /* Espacement intérieur */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur en forme de main */
+  text-align: center; /* Alignement du texte au centre */
+  text-decoration: none; /* Pas de soulignement */
+  transition: background-color 0.3s ease; /* Transition de couleur de fond */
+}
+
+#bp-payment-button:hover {
+  background-color: #444; /* Fond gris foncé au survol */
+}
+
+#bp-payment-button img {
+  vertical-align: middle; /* Alignement vertical des images */
+  margin-right: 10px; /* Espacement à droite des images */
+}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./Cart.css";
+import PaymentButton from "../../Components/PaymentCrypto/CryptoForm";
 
 // Supposons que nous ayons des articles de panier initiaux comme exemple
 const initialCartItems = [
