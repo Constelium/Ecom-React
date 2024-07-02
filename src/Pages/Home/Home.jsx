@@ -1,6 +1,6 @@
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
-import DynamicText from "../../Components/DynamicText/DynamicText";
+import Banner from "../../Components/Banner/Banner";
 import NewsletterPopup from "../../Components/NewsletterPopup/NewsletterPopup";
 import useAnalytics from "../../Components/useAnalytics/useAnalytics";
 import "./Home.css";
@@ -21,7 +21,7 @@ function HomePage() {
         {/* <video autoPlay loop muted className="background-video">
             <source src="chemin-vers-votre-video.mp4" type="video/mp4" /> */}
         <div className="banner">
-          <DynamicText />
+          <Banner />
         </div>
         <div className="section">
           <h2>Welcome to the World of Constelium</h2>
