@@ -111,35 +111,18 @@
 
 // export default HomePage;
 
-import { useInView } from "react-intersection-observer";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import DynamicText from "../../Components/DynamicText/DynamicText";
 import NewsletterPopup from "../../Components/NewsletterPopup/NewsletterPopup";
 import useAnalytics from "../../Components/useAnalytics/useAnalytics";
+import Section from "./Section";
 import "./Home.css";
 
 import ImageVanGogh from "../../assets/ImageVanGogh.jpg";
 import ImageNFT from "../../assets/ImageNFT.jpg";
 import ImagePerso from "../../assets/ImagePerso.jpg";
 import imagevitrine5 from "../../assets/imagevitrine2.png";
-
-const Section = ({ title, text, imgSrc, altText }) => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
-  return (
-    <div ref={ref} className={`section ${inView ? "visible" : ""}`}>
-      <h2>{title}</h2>
-      <div className="caseImg">
-        <img src={imgSrc} alt={altText} width="100%" height="300px" />
-      </div>
-      <p>{text}</p>
-    </div>
-  );
-};
 
 function HomePage() {
   useAnalytics();

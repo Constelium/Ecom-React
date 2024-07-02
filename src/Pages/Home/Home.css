@@ -128,11 +128,22 @@ p {
   background-position: center;
 }
 
-.section {
+/* .section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+} */
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .caseImg {
