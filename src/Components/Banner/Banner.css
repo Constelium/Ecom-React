@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #ff0057 0%, #ff6f00 100%);
-  padding: 20px;
+  background: linear-gradient(135deg, #34e28b 0%, #067c41 100%);
+  padding: 50px;
   border-radius: 20px;
-  color: #fff;
-  margin: 20px 0;
+  color: #ffffff;
+  margin: 80px 0;
 }
 
 .banner-content {
@@ -34,25 +34,6 @@
 .banner-subtitle p {
   font-size: 18px;
   margin: 20px 0;
-}
-
-.banner-button .button {
-  background-color: #fff;
-  color: #000;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  transition: background-color 0.3s;
-}
-
-.banner-button .button img {
-  margin-right: 10px;
-}
-
-.banner-button .button:hover {
-  background-color: #f0f0f0;
 }
 
 .banner-image img {
