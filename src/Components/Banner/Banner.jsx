@@ -6,12 +6,10 @@ const Banner = () => {
     <div className="banner-container">
       <div className="banner-content">
         <div className="banner-title">
-          <h1>
-            Your canvas to highlight everything <br />
-          </h1>
+          <h1>Transform your space with Constelium</h1>
         </div>
         <div className="banner-subtitle">
-          <p>Transform your space with Constelium</p>
+          <p>Your canvas to highlight everything</p>
         </div>
       </div>
       <div className="banner-image">

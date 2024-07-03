@@ -23,42 +23,6 @@ html {
   padding: 0;
 }
 
-.neon-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: var(--text-color);
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.neon-text {
-  /* ... vos autres styles ... */
-  border-right: 2px solid var(--button-color);
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 3s steps(40, end) forwards,
-    blink-caret 0.75s step-end infinite;
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: var(--button-color);
-  }
-}
-
 h2,
 h5,
 h6 {
@@ -114,19 +78,6 @@ p {
   color: var(--title-color);
   text-align: center;
 }
-
-/* .banner {
-  width: 210%;
-  height: 400px;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 90px;
-  margin-top: 70px;
-  border: 4px solid #34e28b;
-  background-image: url("../../assets/videoConstLogo.gif");
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 
 .section {
   display: flex;
