@@ -34,31 +34,6 @@ h1 {
   margin-bottom: 100px;
 }
 
-p {
-  font-size: 17px;
-  margin: 0;
-}
-
-.our-canvases-btn {
-  display: inline-block;
-  font-size: 18px;
-  padding: 10px 20px;
-  margin: 5px;
-  background-color: var(--button-color);
-  text-align: center;
-  border: 1px solid var(--background-color);
-  border-radius: 50px;
-  transition: background-color 0.3s;
-}
-
-.our-canvases-btn:hover {
-  background-color: var(--hoover-color);
-}
-
-.our-canvases-btn a {
-  color: var(--text-button);
-}
-
 /* Styles pour le contenu principal (main) */
 .mainHome {
   display: flex;
@@ -80,27 +55,21 @@ p {
 }
 
 .section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transform: translateY(20px);
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content {
+  text-align: center;
+  margin: 20px;
 }
 
 .caseImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 300px;
-  margin: 0;
-  padding: auto;
-  margin-bottom: 10px;
-  /* border: 4px solid white; */
-}
-
-.caseImg img {
-  height: 100%;
-  width: auto;
-  max-width: 100%;
-  clip-path: xywh(0 5px 100% 75% round 15% 0);
+  margin: 20px 0;
 }
