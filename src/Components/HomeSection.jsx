@@ -2,14 +2,17 @@ import PropTypes from "prop-types";
 import { useInView } from "react-intersection-observer";
 import "../Pages/Home/Home.css";
 
-const HomeSection = ({ title, text, imgSrc, altText }) => {
+const HomeSection = ({ title, text, imgSrc, altText, direction }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
   return (
-    <div ref={ref} className={`section ${inView ? "visible" : ""}`}>
+    <div
+      ref={ref}
+      className={`section ${inView ? `visible ${direction}` : ""}`}
+    >
       <div className="content">
         <h2>{title}</h2>
         <div className="caseImg">
@@ -26,6 +29,7 @@ HomeSection.propTypes = {
   text: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired,
   altText: PropTypes.string.isRequired,
+  direction: PropTypes.string.isRequired,
 };
 
 export default HomeSection;
