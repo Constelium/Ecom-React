@@ -106,21 +106,3 @@ h1 {
   max-width: 100%;
   clip-path: xywh(0 5px 100% 75% round 15% 0);
 }
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 40px 0;
-}
-
-.text-section {
-  flex: 1;
-  padding: 20px;
-}
-
-.image-section {
-  flex: 1;
-  padding: 20px;
-}
