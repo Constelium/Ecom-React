@@ -56,8 +56,8 @@ h1 {
 
 .section {
   opacity: 0;
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
   transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .section.visible {
@@ -72,4 +72,11 @@ h1 {
 
 .caseImg {
   margin: 20px 0;
+}
+
+.caseImg img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  clip-path: xywh(0 5px 100% 75% round 15% 0);
 }

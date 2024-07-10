@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useInView } from "react-intersection-observer";
+import "../Pages/Home/Home.css";
 
 const HomeSection = ({ title, text, imgSrc, altText }) => {
   const { ref, inView } = useInView({

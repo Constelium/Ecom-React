@@ -1,7 +1,7 @@
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import Banner from "../../Components/Banner/Banner";
-import HomeSection from "../../Components/HomeSection";
+import HomeSection from "../../Components/HomeSection.jsx";
 import NewsletterPopup from "../../Components/NewsletterPopup/NewsletterPopup";
 import useAnalytics from "../../Components/useAnalytics/useAnalytics";
 import "./Home.css";
