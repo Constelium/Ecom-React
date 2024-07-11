@@ -78,3 +78,12 @@ button {
 .success p {
   color: #34e28b;
 }
+
+.no-thanks-link {
+  margin-top: 10px;
+  background: none;
+  color: #0ab35f;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}

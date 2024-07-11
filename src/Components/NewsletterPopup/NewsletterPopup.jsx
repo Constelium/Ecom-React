@@ -77,7 +77,9 @@ const NewsletterPopup = () => {
             <button type="submit">Subscribe</button>
             <div className="formMessage"></div>
           </form>
-          <div>No, thanks</div>
+          <a href="#" onClick={handleClose} className="no-thanks-link">
+            No, thanks
+          </a>
         </div>
       </div>
     )
