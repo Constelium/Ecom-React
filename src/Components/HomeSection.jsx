@@ -14,10 +14,10 @@ const HomeSection = ({ title, text, imgSrc, altText, direction }) => {
       className={`section ${inView ? `visible ${direction}` : ""}`}
     >
       <div className="content">
-        <h2>{title}</h2>
         <div className="caseImg">
           <img src={imgSrc} alt={altText} width="100%" height="300px" />
         </div>
+        <h2>{title}</h2>
         <p>{text}</p>
       </div>
     </div>
