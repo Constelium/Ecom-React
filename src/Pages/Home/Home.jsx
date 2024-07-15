@@ -39,9 +39,10 @@ function Home() {
         />
         <HomeSection
           imgSrc={imagevitrine5}
-          title="Monitor Your Cryptos"
-          text="But Constelium isn't just for display; it's a dynamic dashboard for your crypto investments. Follow market fluctuations in real-time, and let your canvas inform you of trends without ever losing sight of elegance and beauty. With Constelium, performance meets art."
-          altText="Crypto Dashboard"
+          title="Photos and personal videos"
+          Subtitle="Eternal Memories"
+          text=" Display your most precious memories with exceptional image quality. Whether family photos or vacation videos, our frames offer unparalleled clarity and vibrancy. Easily transfer your photos and videos via our mobile app, customizing the display to your preferences."
+          altText="Peronal Things"
           direction="left-to-right"
         />
         <HomeSection
