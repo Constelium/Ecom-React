@@ -49,14 +49,14 @@ function Home() {
           imgSrc={imagevitrine5}
           title="Versatility and Customization"
           text="We understand the importance of accessibility. That's why our canvases accept various wallets, allowing you to connect and interact with your portfolio in an intuitive and secure way."
-          altText="Wallets"
+          altText="Versatility"
           direction="right-to-left"
         />
         <HomeSection
           imgSrc={ImagePerso}
           title="Mobile App"
           text="Constelium gives you the choice: one base model for those who appreciate simplicity, and customization options for those who desire a more personal touch. Do you dream of a canvas that reflects your identity? We bring it to life for you."
-          altText="Customization"
+          altText="App"
           direction="left-to-right"
         />
         <HomeSection
