@@ -23,16 +23,18 @@ function Home() {
         </div>
         <HomeSection
           imgSrc={ImageVanGogh}
-          title="Welcome to the World of Constelium"
-          text="Discover a premium visual experience with Constelium: a perfect harmony between digital art and cutting-edge technology. Our digital canvases, crafted with the expertise of artisan cabinetmakers, are not just works of art; they are the pulsing heart of your passion for cryptocurrencies and NFTs."
-          altText="Van Gogh"
+          title="NFT Display"
+          Subtitle="Blockchain Integration"
+          text="Our Canvas allow you to display NFTs from a variety of blockchains, including Ethereum and Solana, providing a dynamic showcase for your digital art and all you desire. Utilizing blockchain technology, each displayed NFT is secure and authentic, ensuring ownership and uniqueness of the art."
+          altText="NFT"
           direction="left-to-right"
         />
         <HomeSection
           imgSrc={ImageNFT}
-          title="Display Your Passion"
-          text="With Constelium, your NFT collection comes to life in the most elegant setting imaginable. Each pixel on our screens is a window into the worlds you've chosen to embrace. Your digital works are no longer confined to ordinary displays; they are illuminated, enhanced by the brilliance and clarity of our high-end canvases."
-          altText="NFT"
+          title="Financial Charts"
+          Subtitle="Crypto, Stocks, Forex"
+          text="View real-time charts of your financial assets. Follow market trends and make informed decisions with a clear and detailed display. Receive instant updates on financial market fluctuations directly on your Canvas."
+          altText="CRYPTO"
           direction="right-to-left"
         />
         <HomeSection

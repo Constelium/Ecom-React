@@ -23,17 +23,6 @@ html {
   padding: 0;
 }
 
-h2,
-h5,
-h6 {
-  margin-bottom: 30px;
-  color: var(--title-color);
-}
-
-h1 {
-  margin-bottom: 100px;
-}
-
 /* Styles pour le contenu principal (main) */
 .mainHome {
   display: flex;
@@ -94,6 +83,9 @@ h1 {
 .content {
   text-align: center;
   margin: 20px;
+}
+
+.content h4 {
 }
 
 .caseImg {
