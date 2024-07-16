@@ -23,6 +23,10 @@ html {
   padding: 0;
 }
 
+h2 {
+  color: #e4dcdc;
+}
+
 /* Styles pour le contenu principal (main) */
 .mainHome {
   display: flex;
