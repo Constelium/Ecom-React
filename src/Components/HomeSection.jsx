@@ -18,7 +18,7 @@ const HomeSection = ({ title, text, subtitle, imgSrc, altText, direction }) => {
           <img src={imgSrc} alt={altText} width="100%" height="300px" />
         </div>
         <h2>{title}</h2>
-        <h4>{subtitle}</h4>
+        {subtitle && <h4>{subtitle}</h4>}
         <p>{text}</p>
       </div>
     </div>
@@ -27,7 +27,7 @@ const HomeSection = ({ title, text, subtitle, imgSrc, altText, direction }) => {
 
 HomeSection.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
   text: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired,
   altText: PropTypes.string.isRequired,

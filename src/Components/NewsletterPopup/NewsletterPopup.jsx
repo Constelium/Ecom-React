@@ -15,16 +15,13 @@ const NewsletterPopup = () => {
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 10000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  useEffect(() => {
     const NewsletterPopup = localStorage.getItem("NewsletterPopup");
     if (!NewsletterPopup) {
-      setIsVisible(true);
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 10000); // Affiche la popup après 10 secondes
+
+      return () => clearTimeout(timer);
     }
   }, []);
 
