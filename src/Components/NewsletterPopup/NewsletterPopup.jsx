@@ -22,6 +22,13 @@ const NewsletterPopup = () => {
   }, []);
 
   useEffect(() => {
+    const NewsletterPopup = localStorage.getItem("NewsletterPopup");
+    if (!NewsletterPopup) {
+      setIsVisible(true);
+    }
+  }, []);
+
+  useEffect(() => {
     // Expression régulière simple pour la validation d'email
     const mailRegex = /\S+@\S+\.\S+/;
     setIsValidMail(mailRegex.test(mail));
@@ -49,7 +56,7 @@ const NewsletterPopup = () => {
 
   const handleClose = () => {
     setIsVisible(false);
-    localStorage.setItem("isPopupSeen", "true"); // Marque la popup comme vue
+    localStorage.setItem("NewsletterPopup", "true"); // Marque la popup comme vue
   };
 
   if (!isVisible) return null;
@@ -58,9 +65,6 @@ const NewsletterPopup = () => {
     isVisible && (
       <div className="newsletter-popup">
         <div className="newsletter-content">
-          <button className="close-btn" onClick={handleClose}>
-            &times;
-          </button>
           <h2>Subscribe to Our Newsletter</h2>
           <div className="text-annonce">
             <p>
