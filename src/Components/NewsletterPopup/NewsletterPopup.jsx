@@ -47,7 +47,12 @@ const NewsletterPopup = () => {
     }
   };
 
-  const handleClose = () => setIsVisible(false);
+  const handleClose = () => {
+    setIsVisible(false);
+    localStorage.setItem("isPopupSeen", "true"); // Marque la popup comme vue
+  };
+
+  if (!isVisible) return null;
 
   return (
     isVisible && (
