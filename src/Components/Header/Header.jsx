@@ -22,7 +22,7 @@ function Header() {
       <div className="header-middle">
         {shouldShowDigitalCanvasLink && ( // Utilisez la condition ici pour afficher ou masquer le lien
           <a href="/OurCanvases" className="header-link">
-            Get your digital Canva
+            Get your Canvas
           </a>
         )}
       </div>
