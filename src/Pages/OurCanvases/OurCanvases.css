@@ -17,13 +17,13 @@
 
 .product-details h1 {
   font-size: 2.5em;
-  color: #333;
+  color: #e4dcdc;
   margin-bottom: 20px;
 }
 
 .product-details p {
   font-size: 1.2em;
-  color: #666;
+  color: #99999c;
   margin-bottom: 20px;
 }
 
@@ -34,7 +34,7 @@
 
 .product-details ul li {
   font-size: 1.1em;
-  color: #555;
+  color: #99999c;
   margin-bottom: 10px;
 }
 
