@@ -46,14 +46,15 @@ footer {
 
 .FooterLinks h3 {
   margin: 15px 5px;
+  color: #ffffff;
 }
 
 .FooterLinks img {
   background-color: #00000000;
-  margin: 2.5px;
+  margin: 5px;
   padding: 0;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .FooterLinks p {
