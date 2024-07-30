@@ -56,10 +56,10 @@ function Footer() {
   return (
     <footer>
       <div className="FooterLinks">
-        <div>
+        {/* <div>
           <h3>Contact</h3>
           <p>constelium.xyz@gmail.com</p>
-        </div>
+        </div> */}
         <div>
           <h3>Socials</h3>
           <a
