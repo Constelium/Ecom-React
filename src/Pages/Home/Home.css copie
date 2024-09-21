@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --button-color: #34e28b; /* Couleur principale */
+  --style-color: #fa0061; /* Couleur secondaire */
+  --background-Head-Foot: #111111; /* Couleur de fond */
+  --background-color: #010101;
+  --text-color: #99999c; /* Couleur du texte */
+  --title-color: #e4dcdc;
+  --hoover-color: #0ab35f;
+  --popup-background: #fffff8; /* Fond de la pop-up */
+  --popup-text-color: #000000; /* Texte de la pop-up */
+  --text-button: #010101;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour le contenu principal (main) */
+.mainHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin: 100px auto;
+}
+
+.mainHome p {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--title-color);
+  text-align: center;
+}
+
+/* Animation pour la translation de gauche à droite */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation pour la translation de droite à gauche */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.section {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.visible.left-to-right {
+  animation: slideInLeft 0.6s forwards;
+}
+
+.section.visible.right-to-left {
+  animation: slideInRight 0.6s forwards;
+}
+
+.content {
+  text-align: center;
+  margin: 20px;
+}
+
+.caseImg {
+  margin: 20px 0;
+}
+
+.caseImg img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  clip-path: xywh(0 5px 100% 75% round 15% 0);
+}
