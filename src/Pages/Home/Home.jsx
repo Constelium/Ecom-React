@@ -1,7 +1,7 @@
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
-import bannerImage from "../../assets/bannerimage.mp4";
-import testbanner from "../../assets/testbanner.png";
+import bannerImage from "../../assets/bannerimage.mp4"; // Si c'est une vidéo
+import featureImage from "../../assets/testbanner.png";
 import { Button } from "@nextui-org/react";
 import NewsletterPopup from "../../Components/NewsletterPopup/NewsletterPopup";
 import useAnalytics from "../../Components/useAnalytics/useAnalytics";
@@ -42,7 +42,7 @@ function Home() {
             <Button color="secondary">Learn More</Button>
           </div>
           <div className="feature-image">
-            <img src={testbanner} alt="test" />
+            <img src={featureImage} alt="Feature" />
           </div>
         </section>
       </div>
