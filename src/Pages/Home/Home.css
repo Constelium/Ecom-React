@@ -83,7 +83,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: transparent;
+  opacity: 0.7;
   padding: 50px 10%;
   border-radius: 15px;
   margin-top: 50px;

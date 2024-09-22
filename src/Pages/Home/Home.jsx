@@ -1,7 +1,7 @@
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
-import bannerImage from "../../assets/bannerimage.mp4"; // Si c'est une vidéo
-import featureImage from "../../assets/testbanner.png";
+import bannerimage from "../../assets/bannerimage.gif"; // Si c'est une vidéo
+import featureimage from "../../assets/testbanner.png";
 import { Button } from "@nextui-org/react";
 import NewsletterPopup from "../../Components/NewsletterPopup/NewsletterPopup";
 import useAnalytics from "../../Components/useAnalytics/useAnalytics";
@@ -13,39 +13,27 @@ function Home() {
   return (
     <>
       <Header />
-      <div className="home-container">
-        {/* Section Bannière */}
-        <section className="banner-section">
-          <div className="banner-content">
-            <h1>Transform your space with Constelium</h1>
-            <p>Your canvas to highlight everything.</p>
-            <Button color="primary">Get Started</Button>
-          </div>
-          <div className="banner-image">
-            <img src={bannerImage} alt="Banner" />
-          </div>
-        </section>
-
-        {/* Section Fonctionnalités */}
-        <section className="features-section">
-          <div className="feature-content">
-            <h2>Why Choose Constelium?</h2>
-            <p>
-              Seamles integration with your space, enhanced by modern
-              technology.
-            </p>
-            <ul>
-              <li>High-quality digital canvases</li>
-              <li>Customizable designs</li>
-              <li>Support for various cryptocurrencies</li>
-            </ul>
-            <Button color="secondary">Learn More</Button>
-          </div>
-          <div className="feature-image">
-            <img src={featureImage} alt="Feature" />
-          </div>
-        </section>
-      </div>
+      {/* Section Fonctionnalités */}
+      <section className="features-section">
+        <div className="feature-content">
+          <h2>Why Choose Constelium?</h2>
+          <p>
+            Seamless integration with your space, enhanced by modern technology.
+          </p>
+          <ul>
+            <li>High-quality digital canvases</li>
+            <li>Customizable designs</li>
+            <li>Support for various cryptocurrencies</li>
+          </ul>
+          <Button color="secondary">Learn More</Button>
+        </div>
+        <div className="feature-image">
+          <img src={featureimage} alt="Feature" />
+        </div>
+        <div className="banner-image">
+          <img src={bannerimage} alt="Banner" />
+        </div>
+      </section>
       <NewsletterPopup />
       <Footer />
     </>
