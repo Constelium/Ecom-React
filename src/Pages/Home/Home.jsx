@@ -31,7 +31,7 @@ function Home() {
           <div className="feature-content">
             <h2>Why Choose Constelium?</h2>
             <p>
-              Seamless integration with your space, enhanced by modern
+              Seamles integration with your space, enhanced by modern
               technology.
             </p>
             <ul>
