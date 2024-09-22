@@ -43,6 +43,10 @@ html {
   text-align: center;
 }
 
+.description {
+  margin-top: 50%;
+}
+
 /* Animation pour la translation de gauche à droite */
 @keyframes slideInLeft {
   from {
@@ -94,4 +98,53 @@ html {
   height: auto;
   max-width: 100%;
   clip-path: xywh(0 5px 100% 75% round 15% 0);
+}
+
+/* Bannière */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Pour le mettre en arrière-plan */
+  overflow: hidden;
+}
+
+.banner-gif img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Pour s'assurer que le gif couvre toute la bannière */
+  opacity: 0.3; /* Opacité pour effet fondu */
+}
+
+.banner-gif::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    /* Transition graduelle sur la moitié inférieure */ rgba(0, 0, 0, 1) 100%
+      /* Noir opaque à la fin */
+  );
+  z-index: 2; /* Superposition du dégradé */
+}
+
+.banner .Banner {
+  z-index: 2; /* Le contenu textuel de la bannière doit être au-dessus du GIF */
+  position: relative;
 }
