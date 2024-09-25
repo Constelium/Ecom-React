@@ -45,7 +45,7 @@ function Home() {
             title="Photos and personal videos"
             Subtitle="Eternal Memories"
             text=" Display your most precious memories with exceptional image quality. Whether family photos or vacation videos, our frames offer unparalleled clarity and vibrancy. Easily transfer your photos and videos via our mobile app, customizing the display to your preferences."
-            altText="Peronal Things"
+            altText="Personal Things"
             direction="left-to-right"
           />
           <HomeSection
