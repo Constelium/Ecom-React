@@ -4,6 +4,7 @@ import Banner from "../../Components/Banner/Banner";
 import HomeSection from "../../Components/HomeSection.jsx";
 import NewsletterPopup from "../../Components/NewsletterPopup/NewsletterPopup";
 import useAnalytics from "../../Components/useAnalytics/useAnalytics";
+import Faq from "../../Components/Faq";
 import "./Home.css";
 
 import ImageVanGogh from "../../assets/ImageVanGogh.jpg";
@@ -71,6 +72,7 @@ function Home() {
           />
         </div>
         <NewsletterPopup />
+        <Faq />
       </main>
       <Footer />
     </>
