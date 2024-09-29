@@ -53,7 +53,6 @@ function Header() {
             <a href="/">Home</a>
             <a href="/OurCanvases">Canvas</a>
             <a href="/AboutUs">About us</a>
-            <a href="/Faq">FAQ</a>
             <a href="/Contact">Contact us</a>
             <a href="/Cart">Cart</a>
           </div>
