@@ -106,16 +106,16 @@ input::placeholder {
 .payment-logos {
   position: absolute;
   content: "";
-  top: 248px;
+  top: 240px;
   display: flex;
   justify-content: center; /* Centrez les logos horizontalement */
   align-items: center; /* Centrez les logos verticalement */
 }
 
 .payment-logos img {
-  margin: 0 5px; /* Espacement horizontal entre les logos */
+  margin: 0 6px; /* Espacement horizontal entre les logos */
   width: auto; /* Ou une largeur spécifique si nécessaire */
-  height: 20px; /* Hauteur des logos pour les uniformiser */
+  height: 22px; /* Hauteur des logos pour les uniformiser */
   border-radius: 4px 4px 4px 4px;
 }
 
