@@ -9,7 +9,7 @@ import "./Home.css";
 
 import ImageVanGogh from "../../assets/ImageVanGogh.jpg";
 import ImageNFT from "../../assets/ImageNFT.jpg";
-import ImagePerso from "../../assets/ImagePerso.jpg";
+import ImagePerso from "../../assets/ImagePerso.png";
 import imagevitrine5 from "../../assets/imagevitrine2.png";
 import bannerGif from "../../assets/bannerimage.gif";
 

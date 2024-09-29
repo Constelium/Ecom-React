@@ -22,6 +22,8 @@ body {
   padding: 40px 20px;
   max-width: 800px;
   margin: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .faq h1 {
@@ -45,7 +47,7 @@ body {
   cursor: pointer;
   background-color: var(--question-bg);
   border: none;
-  color: var(--text-color);
+  color: #ffffff;
   padding: 15px 20px;
   width: 100%;
   text-align: left;
@@ -78,6 +80,7 @@ body {
 .faq-answer.active {
   display: block;
   max-height: 500px; /* Limiter la hauteur pour l'animation */
+  line-height: 25px;
 }
 
 .faq-answer p {

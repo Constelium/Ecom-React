@@ -11,7 +11,7 @@
   --text-color: #99999c; /* Couleur du texte */
   --title-color: #e4dcdc;
   --hoover-color: #0ab35f;
-  --popup-background: #fffff8; /* Fond de la pop-up */
+  --popup-background: #ffffff; /* Fond de la pop-up */
   --popup-text-color: #000000; /* Texte de la pop-up */
   --text-button: #010101;
 }
@@ -88,13 +88,15 @@ body {
 }
 
 h2 {
-  color: var(--title-color);
+  color: #e4dcdc;
   text-align: left;
   font-size: 2rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 p {
-  color: var(--text-color);
+  color: #99999c;
   font-size: 1rem;
   line-height: 1.5;
 }
