@@ -1,45 +1,150 @@
-.OurCanvasesMain {
+/* Style global de la page produit */
+.product-page {
+  display: flex;
+  gap: 50px;
   padding: 20px;
-  background-color: #010101;
+  justify-content: space-between; /* Assure une bonne répartition de l'espace */
+  flex-wrap: wrap; /* Permet d'ajuster la mise en page sur de plus petits écrans */
 }
 
-.product-section {
+/* Section des images du produit */
+.product-images {
+  flex: 1;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Assure une bonne dimension des images sans distorsion */
+  max-height: 500px; /* Limite la hauteur de l'image principale */
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Centrer les vignettes */
+  margin-top: 15px;
+}
+
+.thumbnails img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease; /* Animation de transition pour un meilleur effet au survol */
+}
+
+.thumbnails img:hover {
+  border-color: #333; /* Couleur de bordure au survol */
+}
+
+/* Section des détails du produit */
+.product-details {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 1200px;
+  justify-content: flex-start;
 }
 
-.product-details {
-  text-align: center;
-}
-
-.product-details h1 {
-  font-size: 2.5em;
-  color: #e4dcdc;
-  margin-bottom: 20px;
-}
-
-.product-details p {
-  font-size: 1.2em;
-  color: #99999c;
-  margin-bottom: 20px;
-}
-
-.product-details ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.product-details ul li {
-  font-size: 1.1em;
-  color: #99999c;
+.product-title {
+  font-size: 28px;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
-.product-details ul li::before {
-  content: "✔";
-  color: #34e28b;
-  margin-right: 10px;
+.product-price {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5; /* Améliore la lisibilité */
+}
+
+/* Options de couleurs */
+.product-colors {
+  margin-bottom: 20px;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+}
+
+.color-swatch {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.color-swatch.active {
+  border-color: #000;
+}
+
+/* Options de taille */
+.product-sizes {
+  margin-bottom: 20px;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+}
+
+.size-button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background-color: #fff; /* Couleur de fond par défaut */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.size-button:hover {
+  background-color: #f0f0f0; /* Couleur au survol */
+}
+
+.size-button.active {
+  border-color: #000;
+  background-color: #f8f8f8;
+}
+
+.size-recommendation {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Boutons d'action */
+.add-to-cart {
+  background-color: #000;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #333; /* Couleur au survol */
+}
+
+.paypal-button {
+  background-color: #ffd700;
+  color: black;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.paypal-button:hover {
+  background-color: #ffc107; /* Couleur au survol */
 }
