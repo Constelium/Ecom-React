@@ -118,19 +118,12 @@ p {
 
 /* Section avec texte et image */
 .section {
+  opacity: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px 0;
   width: 100%;
-}
-
-.section.left-to-right .caseImg {
-  order: 1;
-}
-
-.section.right-to-left .caseImg {
-  order: 2;
 }
 
 /* Animation pour la translation de gauche à droite */
@@ -159,9 +152,11 @@ p {
 
 /* Gestion des animations */
 .section.visible.left-to-right {
+  opacity: 0;
   animation: slideInLeft 0.9s forwards;
 }
 
 .section.visible.right-to-left {
+  opacity: 0;
   animation: slideInRight 0.9s forwards;
 }
