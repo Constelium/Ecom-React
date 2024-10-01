@@ -9,13 +9,12 @@ const OurCanvases = () => {
 
   const [selectedColor, setSelectedColor] = useState("black");
   const [selectedSize, setSelectedSize] = useState(null);
+  const [customColor, setCustomColor] = useState("#000000");
 
   const colors = [
-    { name: "Black", colorCode: "#000000" },
-    { name: "White", colorCode: "#f8f4f0" },
-    { name: "Cream", colorCode: "#eae6d7" },
-    { name: "Limited Blue", colorCode: "#5068a9" },
-    { name: "Limited Red", colorCode: "#a82b2d" },
+    { name: "Black", colorCode: "#1C1C1C" },
+    { name: "White", colorCode: "#fFFFFF" },
+    { name: "Wood", colorCode: "#C19A6B" },
   ];
 
   const sizes = [6, 7, 8, 9, 10];
@@ -38,15 +37,15 @@ const OurCanvases = () => {
         </div>
 
         <div className="product-details">
-          <h2 className="product-title">Women's Wool Runners</h2>
-          <p className="product-price">$95 USD</p>
+          <h2 className="product-title">Constelium Canvas</h2>
+          <p className="product-price">$ USD</p>
           <p className="product-description">
             A remarkable shoe that's naturally soft, cozy all over, and fits
             your every move.
           </p>
 
           <div className="product-colors">
-            <p>CLASSICS:</p>
+            <p>Color :</p>
             <div className="color-options">
               {colors.map((color, index) => (
                 <span
@@ -58,10 +57,19 @@ const OurCanvases = () => {
                   onClick={() => setSelectedColor(color.name)}
                 ></span>
               ))}
+              <input
+                type="color"
+                value={customColor}
+                onChange={(e) => {
+                  setCustomColor(e.target.value);
+                  setSelectedColor(e.target.value);
+                }}
+                className="color-picker"
+              />
             </div>
           </div>
           <div className="product-sizes">
-            <p>SELECT SIZE:</p>
+            <p>SELECT SIZE :</p>
             <div className="size-options">
               {sizes.map((size, index) => (
                 <button
