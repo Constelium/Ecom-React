@@ -16,7 +16,7 @@ const OurCanvases = () => {
     { name: "Wood", colorCode: "#C19A6B" },
   ];
 
-  const sizes = [6, 7, 8, 9, 10];
+  const sizes = ["Medium", "Maxi", "Master"];
 
   return (
     <>
@@ -74,8 +74,7 @@ const OurCanvases = () => {
               ))}
             </div>
             <p className="size-recommendation">
-              In between sizes? We recommend you size up.{" "}
-              <a href="/size-chart">See Size Chart</a>
+              Medium (22") - Maxi (32") - Master (42"){" "}
             </p>
           </div>
           <button className="add-to-cart">ADD TO CART</button>

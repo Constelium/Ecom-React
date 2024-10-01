@@ -69,6 +69,10 @@
   margin-bottom: 20px;
 }
 
+.product-colors P {
+  margin-bottom: 15px;
+}
+
 .color-options {
   display: flex;
   gap: 10px;
@@ -115,6 +119,7 @@
 }
 
 .size-recommendation {
+  margin-top: 15px;
   font-size: 14px;
   color: #888;
 }
