@@ -9,7 +9,6 @@ const OurCanvases = () => {
 
   const [selectedColor, setSelectedColor] = useState("black");
   const [selectedSize, setSelectedSize] = useState(null);
-  const [customColor, setCustomColor] = useState("#000000");
 
   const colors = [
     { name: "Black", colorCode: "#1C1C1C" },
@@ -57,15 +56,6 @@ const OurCanvases = () => {
                   onClick={() => setSelectedColor(color.name)}
                 ></span>
               ))}
-              <input
-                type="color"
-                value={customColor}
-                onChange={(e) => {
-                  setCustomColor(e.target.value);
-                  setSelectedColor(e.target.value);
-                }}
-                className="color-picker"
-              />
             </div>
           </div>
           <div className="product-sizes">
