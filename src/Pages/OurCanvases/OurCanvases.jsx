@@ -21,26 +21,23 @@ const OurCanvases = () => {
   return (
     <>
       <Header />
-      <main className="product-page">
-        <div className="product-images">
-          <img
-            src="/path/to/product-image.jpg"
-            alt="Product"
-            className="main-image"
-          />
-          <div className="thumbnails">
-            <img src="/path/to/thumbnail1.jpg" alt="Thumbnail 1" />
-            <img src="/path/to/thumbnail2.jpg" alt="Thumbnail 2" />
-            <img src="/path/to/thumbnail3.jpg" alt="Thumbnail 3" />
+      <main>
+        <div className="product-images-wrapper">
+          <div className="product-images">
+            <img
+              src="path_to_main_image.jpg"
+              className="main-image"
+              alt="Produit principal"
+            />
           </div>
         </div>
-
         <div className="product-details">
-          <h2 className="product-title">Constelium Canvas</h2>
-          <p className="product-price">$ USD</p>
+          <h1 className="product-title">Constelium Canvas</h1>
+          <p className="product-price">499 $</p>
           <p className="product-description">
-            A remarkable shoe that's naturally soft, cozy all over, and fits
-            your every move.
+            A unique canvas that seamlessly merges artistic beauty with the
+            functionality of a modern dashboard, offering both inspiration and
+            practicality.
           </p>
 
           <div className="product-colors">
@@ -59,7 +56,7 @@ const OurCanvases = () => {
             </div>
           </div>
           <div className="product-sizes">
-            <p>SELECT SIZE :</p>
+            <p>Select Size :</p>
             <div className="size-options">
               {sizes.map((size, index) => (
                 <button
@@ -77,8 +74,8 @@ const OurCanvases = () => {
               Medium (22") - Maxi (32") - Master (42"){" "}
             </p>
           </div>
-          <button className="add-to-cart">ADD TO CART</button>
-          <button className="paypal-button">Buy with PayPal</button>
+          <button className="add-to-cart">Add To Cart</button>
+          <button className="crypto-button">Buy With Crypto</button>
         </div>
       </main>
       <Footer />

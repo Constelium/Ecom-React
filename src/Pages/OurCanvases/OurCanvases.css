@@ -1,10 +1,11 @@
 /* Style global de la page produit */
-.product-page {
-  display: flex;
-  gap: 50px;
-  padding: 20px;
-  justify-content: space-between; /* Assure une bonne répartition de l'espace */
-  flex-wrap: wrap; /* Permet d'ajuster la mise en page sur de plus petits écrans */
+.product-images-wrapper {
+  border: 2px solid #ddd; /* Bordure autour de toutes les images */
+  padding: 200px; /* Espacement à l'intérieur du cadre */
+  height: 550px;
+  border-radius: 8px; /* Coins arrondis pour une meilleure esthétique */
+  margin-top: 200px;
+  margin-bottom: 100px; /* Espacement en bas du cadre */
 }
 
 /* Section des images du produit */
@@ -47,6 +48,7 @@
 }
 
 .product-title {
+  color: #ffffff;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -54,8 +56,9 @@
 
 .product-price {
   font-size: 24px;
-  color: #ffffff;
+  color: #ddd;
   margin: 10px 0;
+  margin-bottom: 15px;
 }
 
 .product-description {
@@ -99,6 +102,7 @@
 .size-options {
   display: flex;
   gap: 10px;
+  margin-top: 10px;
 }
 
 .size-button {
@@ -119,37 +123,60 @@
 }
 
 .size-recommendation {
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 14px;
   color: #888;
 }
 
 /* Boutons d'action */
 .add-to-cart {
-  background-color: #000;
-  color: white;
+  background: linear-gradient(
+    90deg,
+    #34e28b,
+    #ff8c00,
+    #6c757d
+  ); /* Dégradé du gris à l'orange puis au vert */
+  color: white; /* Couleur du texte */
   padding: 15px;
   font-size: 16px;
   border: none;
   cursor: pointer;
   margin-bottom: 10px;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease; /* Transition fluide pour l'arrière-plan et effet au survol */
 }
 
 .add-to-cart:hover {
-  background-color: #333; /* Couleur au survol */
+  background: linear-gradient(
+    90deg,
+    #6c757d,
+    #ff8c00,
+    #34e28b
+  ); /* Dégradé inversé au survol */
+  transform: scale(1.05); /* Agrandissement léger au survol */
 }
 
-.paypal-button {
-  background-color: #ffd700;
-  color: black;
+.crypto-button {
+  background: linear-gradient(
+    90deg,
+    #6c757d,
+    #ff8c00,
+    #34e28b
+  ); /* Dégradé du vert à l'orange puis au gris */
+  color: white; /* Couleur du texte */
   padding: 15px;
   font-size: 16px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-bottom: 300px;
+  transition: background 0.3s ease, transform 0.3s ease; /* Transition fluide pour l'arrière-plan et l'effet de survol */
 }
 
-.paypal-button:hover {
-  background-color: #ffc107; /* Couleur au survol */
+.crypto-button:hover {
+  background: linear-gradient(
+    90deg,
+    #34e28b,
+    #ff8c00,
+    #6c757d
+  ); /* Dégradé inversé au survol */
+  transform: scale(1.05); /* Agrandissement léger au survol */
 }
