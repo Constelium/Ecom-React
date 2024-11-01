@@ -1,72 +1,50 @@
-import { useState } from "react";
-import Header from "../../Components/Header/Header";
-import Footer from "../../Components/Footer/Footer";
+import React from "react";
 import "./Cart.css";
-// import PaymentButton from "../../Components/PaymentCrypto/CryptoForm";
 
-// Supposons que nous ayons des articles de panier initiaux comme exemple
-const initialCartItems = [
-  { id: 1, name: "Produit A", price: 10.99, quantity: 2 },
-  { id: 2, name: "Produit B", price: 15.99, quantity: 1 },
-  // Ajoutez d'autres produits ici
-];
-
-const Cart = () => {
-  const [cartItems, setCartItems] = useState(initialCartItems);
-
-  const handleRemoveItem = (itemId) => {
-    const newCartItems = cartItems.filter((item) => item.id !== itemId);
-    setCartItems(newCartItems);
+const Cart = ({ cartItems, onRemoveItem, onUpdateQuantity }) => {
+  const calculateTotal = () => {
+    return cartItems
+      .reduce((total, item) => total + item.price * item.quantity, 0)
+      .toFixed(2);
   };
-
-  const handleQuantityChange = (itemId, quantity) => {
-    const newCartItems = cartItems.map((item) => {
-      if (item.id === itemId) {
-        return { ...item, quantity: quantity };
-      }
-      return item;
-    });
-    setCartItems(newCartItems);
-  };
-
-  const totalPrice = cartItems
-    .reduce((acc, item) => acc + item.price * item.quantity, 0)
-    .toFixed(2);
 
   return (
-    <div>
-      <Header />
-      <main>
-        <h2>Your Cart</h2>
-        {cartItems.length > 0 ? (
-          <div>
-            {cartItems.map((item) => (
-              <div key={item.id}>
-                <h3>{item.name}</h3>
-                <p>Prix unitaire: {item.price}€</p>
-                <p>
-                  Quantité:
+    <div className="cart-container">
+      <h2 className="cart-header">Your Cart</h2>
+      {cartItems.length === 0 ? (
+        <p>Your cart is empty. Go add some amazing canvases!</p>
+      ) : (
+        <>
+          {cartItems.map((item) => (
+            <div key={item.id} className="cart-item">
+              <div className="cart-item-details">
+                <span className="cart-item-title">{item.name}</span>
+                <span className="cart-item-price">
+                  Price: {item.price.toFixed(2)} €
+                </span>
+                <div className="cart-item-quantity">
+                  <label>Quantity: </label>
                   <input
                     type="number"
+                    min="1"
                     value={item.quantity}
-                    onChange={(e) =>
-                      handleQuantityChange(item.id, parseInt(e.target.value))
-                    }
+                    className="input-quantity"
+                    onChange={(e) => onUpdateQuantity(item.id, e.target.value)}
                   />
-                </p>
-                <p>Total: {(item.price * item.quantity).toFixed(2)}€</p>
-                <button onClick={() => handleRemoveItem(item.id)}>
-                  Retirer du panier
-                </button>
+                </div>
               </div>
-            ))}
-            <h3>Prix total du panier: {totalPrice}€</h3>
-          </div>
-        ) : (
-          <p>Votre panier est vide.</p>
-        )}
-      </main>
-      <Footer />
+              <button
+                className="remove-button"
+                onClick={() => onRemoveItem(item.id)}
+              >
+                Retirer du panier
+              </button>
+            </div>
+          ))}
+          <div className="total-price">Total: {calculateTotal()} €</div>
+          <button className="checkout-button">Proceed to Checkout</button>
+        </>
+      )}
     </div>
   );
 };
