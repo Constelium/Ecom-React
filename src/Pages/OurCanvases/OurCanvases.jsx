@@ -64,7 +64,7 @@ const OurCanvases = () => {
           <p className="product-description">
             A unique canvas that seamlessly merges artistic beauty with the
             functionality of a modern dashboard, offering both inspiration and
-            practicality.
+            practicalit.
           </p>
 
           <div className="product-colors">
