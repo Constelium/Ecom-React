@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./OurCanvases.css";
@@ -7,12 +8,38 @@ import useAnalytics from "../../Components/useAnalytics/useAnalytics";
 const OurCanvases = () => {
   useAnalytics();
 
+  const navigate = useNavigate(); // Initialiser le hook useNavigate
+
+  // État local pour le panier
+  const [cart, setCart] = useState([]);
+
+  // Fonction pour ajouter un article au panier
+  const addToCart = (item) => {
+    const updatedCart = [...cart, item];
+    setCart(updatedCart); // Mettez à jour l'état du panier
+    console.log("Article ajouté au panier:", item); // Affichez dans la console pour vérifier
+    navigate("/cart"); // Redirection vers la page du panier après ajout
+  };
+
+  // Exemple d'utilisation dans le bouton d'ajout au panier
+  const handleAddToCart = () => {
+    // Détails de l'article à ajouter au panier
+    const item = {
+      id: 1,
+      name: "Constelium Canvas",
+      price: 499,
+      color: selectedColor,
+      size: selectedSize,
+    };
+    addToCart(item);
+  };
+
   const [selectedColor, setSelectedColor] = useState("black");
   const [selectedSize, setSelectedSize] = useState(null);
 
   const colors = [
     { name: "Black", colorCode: "#1C1C1C" },
-    { name: "White", colorCode: "#fFFFFF" },
+    { name: "White", colorCode: "#FFFFFF" },
     { name: "Wood", colorCode: "#C19A6B" },
   ];
 
@@ -74,7 +101,14 @@ const OurCanvases = () => {
               Medium (22") - Maxi (32") - Master (42"){" "}
             </p>
           </div>
-          <button className="add-to-cart">Add To Cart</button>
+          <button
+            onClick={() =>
+              handleAddToCart({ id: 1, name: "Constelium Canvas", price: 499 })
+            }
+            className="add-to-cart"
+          >
+            Add To Cart
+          </button>
           <button className="crypto-button">Buy With Crypto</button>
         </div>
       </main>

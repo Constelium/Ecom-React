@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import "./Cart.css";
 
 const Cart = ({ cartItems, onRemoveItem, onUpdateQuantity }) => {
@@ -29,7 +29,9 @@ const Cart = ({ cartItems, onRemoveItem, onUpdateQuantity }) => {
                     min="1"
                     value={item.quantity}
                     className="input-quantity"
-                    onChange={(e) => onUpdateQuantity(item.id, e.target.value)}
+                    onChange={(e) =>
+                      onUpdateQuantity(item.id, Number(e.target.value))
+                    }
                   />
                 </div>
               </div>
@@ -47,6 +49,19 @@ const Cart = ({ cartItems, onRemoveItem, onUpdateQuantity }) => {
       )}
     </div>
   );
+};
+
+Cart.propTypes = {
+  cartItems: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      quantity: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+  onRemoveItem: PropTypes.func.isRequired,
+  onUpdateQuantity: PropTypes.func.isRequired,
 };
 
 export default Cart;
