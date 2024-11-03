@@ -1,38 +1,18 @@
-import { useState } from "react";
+import useState from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./OurCanvases.css";
 import useAnalytics from "../../Components/useAnalytics/useAnalytics";
+import { useCart } from "../../contexts/CartContext";
+import { useUser } from "../../contexts/UserContext";
 
 const OurCanvases = () => {
   useAnalytics();
 
-  const navigate = useNavigate(); // Initialiser le hook useNavigate
-
-  // État local pour le panier
-  const [cart, setCart] = useState([]);
-
-  // Fonction pour ajouter un article au panier
-  const addToCart = (item) => {
-    const updatedCart = [...cart, item];
-    setCart(updatedCart); // Mettez à jour l'état du panier
-    console.log("Article ajouté au panier:", item); // Affichez dans la console pour vérifier
-    navigate("/cart"); // Redirection vers la page du panier après ajout
-  };
-
-  // Exemple d'utilisation dans le bouton d'ajout au panier
-  const handleAddToCart = () => {
-    // Détails de l'article à ajouter au panier
-    const item = {
-      id: 1,
-      name: "Constelium Canvas",
-      price: 499,
-      color: selectedColor,
-      size: selectedSize,
-    };
-    addToCart(item);
-  };
+  const navigate = useNavigate();
+  const { addToCart } = useCart();
+  const { user, toggleAuthPopup } = useUser();
 
   const [selectedColor, setSelectedColor] = useState("black");
   const [selectedSize, setSelectedSize] = useState(null);
@@ -44,6 +24,41 @@ const OurCanvases = () => {
   ];
 
   const sizes = ["Medium", "Maxi", "Master"];
+
+  const handleAddToCart = async () => {
+    if (!user) {
+      toggleAuthPopup();
+      return;
+    }
+
+    const item = {
+      photo: "path_to_main_image.jpg",
+      price: 499,
+      color: selectedColor,
+      size: selectedSize,
+    };
+
+    try {
+      const response = await fetch(
+        `http://localhost:3001/user/updateNFTs/${user._id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${user.token}`,
+          },
+          body: JSON.stringify({ products: [...user.products, item] }),
+        }
+      );
+      const data = await response.json();
+      if (data) {
+        addToCart(item);
+        navigate("/cart");
+      }
+    } catch (error) {
+      console.error("Error adding item to cart:", error);
+    }
+  };
 
   return (
     <>
@@ -60,7 +75,7 @@ const OurCanvases = () => {
         </div>
         <div className="product-details">
           <h1 className="product-title">Constelium Canvas</h1>
-          <p className="product-price">499 $</p>
+          <p className="product-price">499 €</p>
           <p className="product-description">
             A unique canvas that seamlessly merges artistic beauty with the
             functionality of a modern dashboard, offering both inspiration and
@@ -68,26 +83,27 @@ const OurCanvases = () => {
           </p>
 
           <div className="product-colors">
-            <p>Color :</p>
+            <p>Color:</p>
             <div className="color-options">
-              {colors.map((color, index) => (
+              {colors.map((color) => (
                 <span
-                  key={index}
-                  className={`color-swatch ${
-                    selectedColor === color.name ? "active" : ""
-                  }`}
+                  key={color.name}
+                  className="color-option"
                   style={{ backgroundColor: color.colorCode }}
                   onClick={() => setSelectedColor(color.name)}
-                ></span>
+                >
+                  {color.name}
+                </span>
               ))}
             </div>
           </div>
+
           <div className="product-sizes">
-            <p>Select Size :</p>
+            <p>Size:</p>
             <div className="size-options">
-              {sizes.map((size, index) => (
+              {sizes.map((size) => (
                 <button
-                  key={index}
+                  key={size}
                   className={`size-button ${
                     selectedSize === size ? "active" : ""
                   }`}
@@ -97,19 +113,11 @@ const OurCanvases = () => {
                 </button>
               ))}
             </div>
-            <p className="size-recommendation">
-              Medium (22") - Maxi (32") - Master (42"){" "}
-            </p>
           </div>
-          <button
-            onClick={() =>
-              handleAddToCart({ id: 1, name: "Constelium Canvas", price: 499 })
-            }
-            className="add-to-cart"
-          >
+
+          <button onClick={handleAddToCart} className="add-to-cart">
             Add To Cart
           </button>
-          <button className="crypto-button">Buy With Crypto</button>
         </div>
       </main>
       <Footer />
