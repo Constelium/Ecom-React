@@ -116,7 +116,7 @@ const OurCanvases = () => {
           </div>
 
           <button onClick={handleAddToCart} className="add-to-cart">
-            Add To Cart
+            Add To Car
           </button>
         </div>
       </main>
